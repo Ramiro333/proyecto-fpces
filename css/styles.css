@@ -1,0 +1,643 @@
+/* 1-limpiar codigo */
+/* 2-optimizar clases, reciclar */
+/* 3-agregar grids cuando las aprenda */
+/* 4-agregar informacion verosimil(sera obligatorio?) */
+/* 5-mejorar los degradados */
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: #2a0d50bd;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* header */
+.cabeza {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(55,0,81,1) 50%, rgb(51, 0, 75) 100%);
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+.navegacion {
+    margin-right: 10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-items {
+    font-size: 20px;
+    background-color: rgb(250, 235, 215);
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 18px;
+    list-style:none;
+}
+.navegacion-lista {
+    display: flex;
+    gap: 1.25rem;
+}
+.link {
+    color: black;
+    text-decoration: none;
+}
+.logo-img{
+    width: 40px;
+    height: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-text {
+    color: antiquewhite;
+    font-weight: bolder;
+    font-size: 1.75rem;
+}
+/* pagina del index */
+body.index {
+    background-image: url(../assets/images/pagina-1.png);
+}
+.section {
+margin-top: 100px;
+}
+.productos{
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 60px 0px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.container-producto {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 25%;
+}
+.imagen-producto {
+    background-size: cover;
+    width:100%;
+}
+.producto-texto {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 30px;
+    background-color: #9c92fc93;
+    padding-top: 10px;
+}
+.primer-seccion {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.texto-primera-seccion {
+    color: rgb(223, 249, 255);
+    text-shadow: #0E0E0E 0px 0 5px;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+    background-color: #4b4b4b81;
+    text-align: center;
+}
+
+.segunda-seccion {
+    padding: 20px;
+    text-shadow: #0E0E0E 0px 0 15px;
+    color: #8D83FF;
+    text-align: center;
+    font-size: 40px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6180847338935574) 93%, rgba(0,0,0,0.44441526610644255) 96%, rgba(0,0,0,0) 100%);
+}
+.segunda-seccion-texto {
+    margin-top: 10px;
+    font-size: 35px;
+    color: #497CFF;
+    margin-left: 100px;
+    margin-right: 6.25rem;
+}
+
+
+
+/* pagina de productos */
+
+/* aun no se comporta como quiero, optimizar */
+.section-producto {
+    margin-top: 40px;
+}
+body.productos-1 {
+    background-image: url(../assets/images/pagina-2.png) 
+}
+.h1-productos {
+    background-image: url(../assets/images/xpg-pro.jpg) ;
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px
+}
+.titulo-productos-1 {
+    color: antiquewhite;
+    text-shadow: #000000 5px 5px 15px;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 30px;
+}
+/* rehacer con grid!! */
+.imagen-producto-izquierda {
+    width: 160px;
+    height: 164px;
+}
+.imagen-producto-derecha {
+    width: 100px;
+    height: 100px;
+}
+
+.container-componentes {
+    display: grid;
+    width: 90%;
+    height: 50%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    "div1 div1 div1 div3 div3 div4 div4 "
+    "div1 div1 div1 div3 div3 div4 div4 "
+    "div1 div1 div1 div5 div5 div6 div6 "
+    "div2 div2 div2 div5 div5 div6 div6 "
+    "div2 div2 div2 div7 div7 div8 div8 "
+    "div2 div2 div2 div7 div7 div8 div8 "
+    ;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.container-individual-producto{
+    color: white;
+    background-color: #0e0e0e91;
+    display: flex;
+    gap: 30px;
+}
+.container-individual-producto.grafica{
+    grid-area: div1;
+}
+.container-individual-producto.procesador{
+    grid-area: div2;
+}
+.container-individual-producto.ram {
+    grid-area: div3;
+}
+.container-individual-producto.disco {
+    grid-area: div4;
+}
+.container-individual-producto.gabinete {
+    grid-area: div5;
+}
+.container-individual-producto.fuente {
+    grid-area: div6;
+}
+.container-individual-producto.cooler{
+    grid-area: div7;
+}
+.container-individual-producto.pasta {
+    grid-area: div8;
+}
+
+/* pagina de FAQ */
+
+
+body.FAQ {
+    background-image: url(../assets/images/pagina-3.png);
+}
+.FAQ-container {
+    margin: 100px 80px 50px 80px
+}
+.h1-faq{
+    text-shadow: #747474 5px 5px 30px;
+    color: antiquewhite;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+.container-FAQ-item {
+    display: flex;
+    font-size: 20px;
+    gap: 50px;
+    padding: 20px 0px 90px 20px;
+}
+.container-FAQ-item.negro{
+    background-color: #00000085;
+    color: rgb(255, 255, 255);
+}
+.container-FAQ-item.blanco {
+    background-color: rgba(255, 255, 255, 0.527);
+
+}
+.contactanos-faq{
+    display: flex;
+    justify-content: center;
+    
+}
+.button-faq {
+    box-shadow: 0px 8px 30px #000000;
+    border: 2px solid black;
+    color: antiquewhite;
+    background-color: #1D10B5 ;
+    margin-bottom: 50px;
+    font-size: 50px;
+    padding: 30px 100px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+/* pagina de nosotros */
+body.nosotros {
+    background-image: url(../assets/images/pagina-4.png);
+}
+.nosotros-imagen {
+    width: 400px;
+    height: 300px;
+}
+.titulo-nosotros{
+    color: antiquewhite;
+    text-shadow: #000000 5px 5px 30px;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+.texto-nosotros {
+    background-color: #00000081;
+    padding: 40px;
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.seccion-imagenes {
+    margin-top: 70px;
+}
+.contenedor-nosotros {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
+.texto-imagenes{
+    color: white;
+    text-shadow: #0E0E0E 4px 0 5px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.contenedor-nosotros.derecha{
+    flex-direction: row-reverse;
+}
+/* contacto */
+
+/* buscar manera mas eficiente de hacer la card */
+
+/* REHACER CARD CON GRID */
+body.contacto{
+    background-image: url(../assets/images/pagina-5.png);
+}
+.section.flex-contacto {
+    display: flex;
+    justify-content: center;
+}
+.titulo-contacto {
+    padding-left: 10px;
+    font-size: 40px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    color: white;
+    background-color: #242424;
+}
+.container-contacto {
+    border-radius: 15px;
+    background-color: white;
+    margin: 50px;
+    width: 80%;
+    height: 600px;
+}
+.container-inputs-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.top-items {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.input-blank{
+    padding: 10px;
+    padding-right: 150px;
+    padding-left: 150px;
+    border: #000000 solid 1px;
+    border-radius: 20px;
+    text-align:center;
+}
+.blank-space{
+    display: flex;
+    flex-direction: column;
+}
+.input-blank.large {
+    margin-top: 30px; 
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.input-blank.extra-large {
+    margin-top: 30px;
+    /* padding-left: 80%;
+    padding-right: 80%;
+    padding-bottom: 90%; */
+}
+.bottom-items {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    
+}
+.boton-enviar-contacto {
+    margin-top: 22px;
+    padding-top: 10px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+    text-align: center;
+}
+/* newsletter */
+.newsletter {
+    background-color: #497CFF;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.newsletter-texto {
+    font-size: 30px;
+}
+/* footer */
+/* sujeto a cambios */
+.pie-pagina {
+    background: rgb(58,0,104);
+    background: linear-gradient(0deg, rgba(58,0,104,0.94) 0%, rgba(79,0,116,0.79) 68%, rgba(17,0,26,0.17) 100%);
+    align-items: flex-end;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.redes {
+    margin-right: 40px;
+    gap: 40px;
+}
+.redes-iconos {
+    width: 30px;
+    height: 30px;
+}
+
+/* RESPONSIVE */
+/* PAGINA INDEX */
+@media (max-width: 1125px){
+    .section{
+        margin-top: 60px;
+    }
+    .cabeza{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .nav-items{
+        font-size: 18px;
+        padding: 6px;
+    }
+    .logo-text{
+        font-size: 16px;
+    }
+    .titulo-productos-1{
+        font-size: 60px;
+    }
+    .texto-primera-seccion{
+        font-size: 26px;
+    }
+    .segunda-seccion{
+        font-size: 30px;
+    }
+    .segunda-seccion-texto{
+        font-size: 30px;
+    }
+    .productos{
+        padding: 20px;
+    }
+    .newsletter{
+        padding: 22px;
+    }
+    .newsletter-texto{
+        font-size: 22px;
+    }
+    .pie-pagina{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+@media (max-width: 768px) {
+    .cabeza{
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .nav-items{
+        font-size: 12px;
+        padding: 6px;
+    }
+    .logo-text{
+        font-size: 19px;
+    }
+    .section{
+        margin-top: 40px;
+    }
+    .titulo-productos-1{
+        font-size: 50px;
+    }
+    .alta-gama{
+        width: 100%;
+        height: 30%;
+    }
+    .texto-primera-seccion{
+        font-size: 18px;
+    }
+    .segunda-seccion{
+        font-size: 22px;
+    }
+    .segunda-seccion-texto{
+        font-size: 22px;
+    }
+    .productos{
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+    .imagen-producto{
+        width: 100%;
+    }
+    .newsletter{
+        padding: 18px;
+    }
+    .newsletter-texto{
+        font-size: 15px;
+    }
+    .pie-pagina{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    
+}
+@media (max-width: 646px){
+    .container-producto{
+        width: 180px;
+    }
+    .productos{
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    }
+}
+@media (max-width: 425px) {
+    /* como resolver la navbar */
+    .cabeza{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .navegacion-lista{
+        gap: 0px;
+    }
+    .nav-items{
+        font-size: 10px;
+        padding: 3px;
+    }
+    .logo-text{
+        font-size: 10px;
+    }
+    .section{
+        margin-top: 40px;
+    }
+    .titulo-productos-1{
+        font-size: 30px;
+    }
+    
+    .texto-primera-seccion{
+        padding: 5px;
+        font-size: 20px;
+    }
+    .segunda-seccion{
+        font-size: 20px;
+    }
+    .segunda-seccion-texto{
+        font-size: 20px;
+        margin: 10px 0px 0px 0px;
+    }
+    .container-producto{
+        width: 180px;
+    }
+    .producto-texto{
+        font-size: 20px;
+    }
+    .productos{
+        padding: 15px;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    .imagen-producto{
+        width: 100%;
+    }
+    .newsletter{
+        padding: 8px;
+    }
+    .newsletter-texto{
+        font-size: 15px;
+    }
+    .pie-pagina{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
+@media (max-width:789px){
+    .FAQ-container{
+        margin: 50px 40px 25px 40px;
+
+    }
+    .h1-faq{
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    .container-FAQ-item{
+        font-size: 18px;
+        padding: 20px;
+    }
+    .button-faq{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:589px) {
+    .container-FAQ-item {
+        display: block;
+        padding: 10px;
+        
+    }
+    .h2-faq{
+        margin-bottom: 10px;
+    }
+    .button-faq{
+        padding: 25px 50px;
+        font-size: 23px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width:320px){
+    .FAQ-container{
+        margin: 25px 20px 25px 20px;
+
+    }
+    .container-FAQ-item {
+        display: block;
+        padding: 10px;
+        font-size: 13px;
+        
+    }
+    .h1-faq{
+        margin-top: 50px;
+        font-size: 37px;
+    }
+    .h2-faq{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .button-faq{
+        padding: 13px 25px;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
