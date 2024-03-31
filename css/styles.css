@@ -71,6 +71,9 @@ body{
 body.index {
     background-image: url(../assets/images/pagina-1.png);
 }
+.index-nav {
+    background-color: #6355ff;
+}
 .section {
 margin-top: 100px;
 }
@@ -143,6 +146,9 @@ margin-top: 100px;
 .section-producto {
     margin-top: 40px;
 }
+.productos-nav{
+    background-color: #6355ff;
+}
 body.productos-1 {
     background-image: url(../assets/images/pagina-2.png) 
 }
@@ -160,7 +166,6 @@ body.productos-1 {
     font-size: 80px;
     padding-top: 30px;
 }
-/* rehacer con grid!! */
 .imagen-producto-izquierda {
     width: 160px;
     height: 164px;
@@ -226,6 +231,9 @@ body.productos-1 {
 body.FAQ {
     background-image: url(../assets/images/pagina-3.png);
 }
+.FAQ-nav{
+        background-color: #6355ff
+}
 .FAQ-container {
     margin: 100px 80px 50px 80px
 }
@@ -235,11 +243,18 @@ body.FAQ {
     font-size: 80px;
     margin-bottom: 50px;
 }
+.h2-faq{
+    width: 30%;
+}
+.p-faq{
+    width: 70%;
+}
 .container-FAQ-item {
     display: flex;
     font-size: 20px;
-    gap: 50px;
-    padding: 20px 0px 90px 20px;
+    gap: 20px;
+    padding: 20px 20px 90px 20px;
+    justify-content: space-between;
 }
 .container-FAQ-item.negro{
     background-color: #00000085;
@@ -270,10 +285,10 @@ body.FAQ {
 body.nosotros {
     background-image: url(../assets/images/pagina-4.png);
 }
-.nosotros-imagen {
-    width: 400px;
-    height: 300px;
+.nosotros-nav{
+    background-color: #6355ff
 }
+
 .titulo-nosotros{
     color: antiquewhite;
     text-shadow: #000000 5px 5px 30px;
@@ -281,25 +296,35 @@ body.nosotros {
     font-size: 100px;
     margin-bottom: 40px;
 }
+.contenedor-texto-nosotros{
+    display: flex;
+    justify-content: center;
+}
 .texto-nosotros {
+    align-items: center;
     background-color: #00000081;
     padding: 40px;
     text-align: center;
     font-size: 35px;
     color: #ffffff;
-    margin-left: 300px;
-    margin-right: 300px;
+    width: 90%;
 }
 .seccion-imagenes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 70px;
 }
 .contenedor-nosotros {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 10px 3% 10px 3%;
     display: flex;
     align-items: center;
 }
+.nosotros-imagen {
+    height: 300px;
+}
 .texto-imagenes{
+    width: 70%;
     color: white;
     text-shadow: #0E0E0E 4px 0 5px;
     font-size: 30px;
@@ -310,12 +335,11 @@ body.nosotros {
     flex-direction: row-reverse;
 }
 /* contacto */
-
-/* buscar manera mas eficiente de hacer la card */
-
-/* REHACER CARD CON GRID */
 body.contacto{
     background-image: url(../assets/images/pagina-5.png);
+}
+.contacto-nav{
+        background-color: #6355ff
 }
 .section.flex-contacto {
     display: flex;
@@ -347,13 +371,13 @@ body.contacto{
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
 }
 .input-blank{
     padding: 10px;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 15%;
+    padding-left: 15%;
     border: #000000 solid 1px;
     border-radius: 20px;
     text-align:center;
@@ -361,29 +385,29 @@ body.contacto{
 .blank-space{
     display: flex;
     flex-direction: column;
+    width: 95%;
+    height: 300px;
 }
 .input-blank.large {
     margin-top: 30px; 
-    padding-left: 20%;
-    padding-right: 20%;
+
 }
 .input-blank.extra-large {
     margin-top: 30px;
-    /* padding-left: 80%;
-    padding-right: 80%;
-    padding-bottom: 90%; */
+    height: 300px;
 }
 .bottom-items {
     display: flex;
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
     
 }
 .boton-enviar-contacto {
+    background-color: #5835d6dc;
     margin-top: 22px;
     padding-top: 10px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 170px;
+    padding-right: 170px;
     padding-bottom: 16px;
     border-radius: 20px;
     text-align: center;
@@ -524,16 +548,24 @@ body.contacto{
     }
 }
 @media (max-width: 425px) {
-    /* como resolver la navbar */
     .cabeza{
+        display: block;
         padding-top: 2px;
         padding-bottom: 2px;
     }
+    .logo{
+        justify-content: center;
+        margin: 10px 0px;
+    }
+    .navegacion{
+        margin: 0px;
+        justify-content:  center;
+    }
     .navegacion-lista{
-        gap: 0px;
+        gap: 10px;
     }
     .nav-items{
-        font-size: 10px;
+        font-size: 12px;
         padding: 3px;
     }
     .logo-text{
@@ -582,6 +614,7 @@ body.contacto{
         padding-bottom: 7px;
     }
 }
+/* pagina de FAQ */
 @media (max-width:789px){
     .FAQ-container{
         margin: 50px 40px 25px 40px;
@@ -600,19 +633,23 @@ body.contacto{
         margin-bottom: 25px;
     }
 }
-@media (max-width:589px) {
+@media (max-width:621px) {
     .container-FAQ-item {
         display: block;
         padding: 10px;
         
     }
     .h2-faq{
+        width: 100%;
         margin-bottom: 10px;
     }
     .button-faq{
         padding: 25px 50px;
         font-size: 23px;
         margin-bottom: 25px;
+    }
+    .p-faq{
+        width: 100%
     }
 }
 
@@ -639,5 +676,37 @@ body.contacto{
         padding: 13px 25px;
         font-size: 16px;
         margin-bottom: 25px;
+    }
+}
+/* PAGINA NOSOTROS */
+@media (max-width: 1024px){
+    .nosotros-imagen{
+        width: 50%;
+        height: 200px;
+    }
+    .contenedor-nosotros {
+        align-items: normal;
+    }
+    .contenedor-nosotros.derecha{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px){
+    .nosotros-imagen{
+        width: 80%;
+        height: 300px;
+    }
+    .contenedor-nosotros{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .contenedor-nosotros.derecha{
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto-imagenes{
+        width: 90%;
     }
 }
