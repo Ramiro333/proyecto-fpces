@@ -44,6 +44,11 @@ body{
     border: 2px solid black;
     border-radius: 18px;
     list-style:none;
+    transition: background-color 0.5s;
+}
+.nav-items:hover{
+    background-color: #948aff;
+    
 }
 .navegacion-lista {
     display: flex;
@@ -547,6 +552,34 @@ body.contacto{
     justify-content: space-evenly;
     }
 }
+@media(max-width:501px){
+    .section{
+        margin-top: 80px;
+    }
+    .cabeza{
+        display: block;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .logo{
+        justify-content: center;
+        margin: 10px 0px;
+    }
+    .navegacion{
+        margin: 0px;
+        justify-content:  center;
+    }
+    .navegacion-lista{
+        gap: 10px;
+    }
+    .nav-items{
+        font-size: 12px;
+        padding: 3px;
+    }
+    .logo-text{
+        font-size: 10px;
+    }
+}
 @media (max-width: 425px) {
     .cabeza{
         display: block;
@@ -572,7 +605,7 @@ body.contacto{
         font-size: 10px;
     }
     .section{
-        margin-top: 40px;
+        margin-top: 80px;
     }
     .titulo-productos-1{
         font-size: 30px;
@@ -617,7 +650,7 @@ body.contacto{
 /* pagina de FAQ */
 @media (max-width:789px){
     .FAQ-container{
-        margin: 50px 40px 25px 40px;
+        margin: 90px 40px 25px 40px;
 
     }
     .h1-faq{
@@ -655,7 +688,7 @@ body.contacto{
 
 @media (max-width:320px){
     .FAQ-container{
-        margin: 25px 20px 25px 20px;
+        margin: 90px 20px 25px 20px;
 
     }
     .container-FAQ-item {
@@ -679,20 +712,50 @@ body.contacto{
     }
 }
 /* PAGINA NOSOTROS */
+
+@media (max-width:1134px){
+    .titulo-nosotros{
+        font-size: 60px;
+    }
+    .texto-nosotros{
+        font-size: 25px;
+    }
+    .texto-imagenes{
+        font-size: 25px;
+    }
+}
 @media (max-width: 1024px){
     .nosotros-imagen{
         width: 50%;
         height: 200px;
     }
     .contenedor-nosotros {
-        align-items: normal;
+        align-items: center;
+    }
+    .texto-imagenes{
+        font-size: 20px;
     }
     .contenedor-nosotros.derecha{
         flex-direction: row;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+    .titulo-nosotros{
+        margin-top: 70px;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 50px;
+    }
+    .texto-nosotros{
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 24px;
+    }
+    .texto-imagenes{
+        font-size: 24px;
+        text-align: center;
+    }
     .nosotros-imagen{
         width: 80%;
         height: 300px;
@@ -706,7 +769,25 @@ body.contacto{
         flex-direction: column;
         align-items: center;
     }
+    .seccion-imagenes{
+        margin-top: 30px;
+    }
     .texto-imagenes{
         width: 90%;
+    }
+}
+@media (max-width: 425px){
+    .titulo-nosotros{
+        margin-top: 100px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 35px;
+    }
+    .texto-nosotros{
+        padding: 5%;
+        font-size: 18px;
+    }
+    .texto-imagenes{
+        font-size: 18px;
     }
 }
