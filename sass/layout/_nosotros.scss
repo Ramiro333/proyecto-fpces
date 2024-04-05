@@ -1,0 +1,62 @@
+.nosotros{
+    background-image: url(../assets/images/pagina-4.png);
+    main{
+        margin-top: 120px;
+        section{
+            &:nth-child(1){
+                h1{
+                    color: antiquewhite;
+                    text-shadow: #000000 5px 5px 30px;
+                    text-align: center;
+                    font-size: 70px;
+                    margin-bottom: 40px;
+                }
+                div{
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        align-items: center;
+                        background-color: #00000081;
+                        padding: 40px;
+                        text-align: center;
+                        font-size: 25px;
+                        color: #ffffff;
+                        width: 90%;
+                    }
+                }
+            }
+            &:nth-child(2){
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 70px;
+                div{
+                    margin: 10px 3% 10px 3%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        height: 300px;
+                    }
+                    p{
+                        width: 70%;
+                        color: white;
+                        text-shadow: #0E0E0E 4px 0 5px;
+                        font-size: 23px;
+                        margin-left: 50px;
+                        margin-right: 50px;
+                    }
+                    
+                    &:nth-child(2){
+                        flex-direction: row-reverse;
+                        
+                    }
+                }
+            }
+            &:nth-child(3){
+                h3{
+                    @include titulos-secudarios;
+                }    
+            }
+        }
+    }
+}

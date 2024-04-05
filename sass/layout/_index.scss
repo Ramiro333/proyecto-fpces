@@ -1,4 +1,4 @@
-body.index{
+.index{
     background-image: url(../assets/images/pagina-1.png);
     main{
         section{
@@ -32,13 +32,7 @@ body.index{
                 }
             }
             &:nth-child(2){
-                padding: 20px;
-                text-shadow: #0E0E0E 0px 0 15px;
-                color: #8D83FF;
-                text-align: center;
-                font-size: 40px;
-                background: rgb(0,0,0);
-                background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6180847338935574) 93%, rgba(0,0,0,0.44441526610644255) 96%, rgba(0,0,0,0) 100%);
+                @include titulos-secudarios;
                 p{
                     margin-top: 10px;
                     font-size: 35px;
@@ -47,41 +41,7 @@ body.index{
                     margin-right: 6.25rem;
                 }
             }
-            &:nth-child(3){
-                margin-top: 40px;
-                div{
-                    flex-wrap: wrap;
-                    gap: 70px;
-                    display: flex;
-                    align-items: stretch;
-                    justify-content: center;
-                    margin-bottom: 40px;
-                    div{
-                        background-color: antiquewhite;
-                        border-radius: 10px;
-                        width: 25%;
-                        transition: transform 0.3s ease;
-                        z-index: 1;
-                        &:hover{
-                            transform: scale(1.2);
-                            z-index: 2
-                        }
-                        img{
-                            background-size: cover;
-                            width:100%;
-                        }
-                        p{
-                            border-bottom-left-radius: 10px;
-                            border-bottom-right-radius: 10px;
-                            padding-bottom: 5px;
-                            padding-left: 10px;
-                            font-size: 30px;
-                            background-color: #9c92fc93;
-                            padding-top: 10px;
-                        }
-                    }
-                }
-            }
+        
         }
     }
 }
