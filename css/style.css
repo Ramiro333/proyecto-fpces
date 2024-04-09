@@ -179,6 +179,120 @@ header {
         background-color: #9c92fc93;
         padding-top: 10px; }
 
+.FAQ {
+  background-image: url(../assets/images/pagina-3.png); }
+  .FAQ main section:nth-child(1) {
+    margin: 100px 80px 50px 80px; }
+    .FAQ main section:nth-child(1) h1 {
+      text-shadow: #747474 5px 5px 30px;
+      color: antiquewhite;
+      font-size: 80px;
+      margin-bottom: 50px; }
+    .FAQ main section:nth-child(1) div .container-blanco, .FAQ main section:nth-child(1) div .container-negro {
+      display: flex;
+      font-size: 19px;
+      gap: 30px;
+      padding: 20px 20px 60px 20px;
+      justify-content: space-between;
+      background-color: rgba(255, 255, 255, 0.527);
+      align-items: center; }
+      .FAQ main section:nth-child(1) div .container-blanco h2, .FAQ main section:nth-child(1) div .container-negro h2 {
+        width: 30%; }
+        .FAQ main section:nth-child(1) div .container-blanco h2 br, .FAQ main section:nth-child(1) div .container-negro h2 br {
+          display: none; }
+      .FAQ main section:nth-child(1) div .container-blanco p, .FAQ main section:nth-child(1) div .container-negro p {
+        width: 70%; }
+    .FAQ main section:nth-child(1) div .container-negro {
+      background-color: #00000085;
+      color: white; }
+
+.boton-contactanos {
+  display: flex;
+  justify-content: center; }
+  .boton-contactanos a {
+    box-shadow: 0px 8px 30px #000000;
+    border: 2px solid black;
+    color: antiquewhite;
+    background-color: #1D10B5;
+    margin-bottom: 50px;
+    font-size: 40px;
+    padding: 30px 100px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center; }
+
+.contacto {
+  background-image: url(../assets/images/pagina-5.png); }
+  .contacto main .flex-contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; }
+    .contacto main .flex-contacto .container-contacto {
+      border-radius: 15px;
+      background-color: white;
+      margin: 50px;
+      width: 80%;
+      height: 600px; }
+      .contacto main .flex-contacto .container-contacto h3 {
+        padding-left: 10px;
+        font-size: 40px;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        color: white;
+        background-color: #242424; }
+      .contacto main .flex-contacto .container-contacto .container-inputs-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        .contacto main .flex-contacto .container-contacto .container-inputs-contacto .top-items, .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items {
+          margin-top: 30px;
+          margin-bottom: 30px;
+          display: flex;
+          width: 95%;
+          justify-content: space-between; }
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .top-items .input-blank, .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items .input-blank {
+            padding: 10px;
+            padding-right: 15%;
+            padding-left: 15%;
+            border: #000000 solid 1px;
+            border-radius: 20px;
+            text-align: center; }
+        .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items {
+          margin-top: 0px;
+          margin-bottom: 0px; }
+        .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space {
+          display: flex;
+          flex-direction: column;
+          width: 95%;
+          height: 300px; }
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space input:nth-child(1) {
+            padding: 10px;
+            padding-right: 15%;
+            padding-left: 15%;
+            border: #000000 solid 1px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 30px; }
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space input:nth-child(2) {
+            padding: 10px;
+            padding-right: 15%;
+            padding-left: 15%;
+            border: #000000 solid 1px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 30px;
+            height: 300px; }
+        .contacto main .flex-contacto .container-contacto .container-inputs-contacto button {
+          background-color: #5835d6dc;
+          margin-top: 22px;
+          padding-top: 10px;
+          padding-left: 170px;
+          padding-right: 170px;
+          padding-bottom: 16px;
+          border-radius: 20px;
+          text-align: center; }
+
 .newsletter {
   background-color: #497CFF;
   padding: 30px;

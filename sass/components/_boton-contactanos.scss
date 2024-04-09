@@ -1,0 +1,16 @@
+.boton-contactanos{
+        display: flex;
+        justify-content: center;
+        a{
+            box-shadow: 0px 8px 30px #000000;
+            border: 2px solid black;
+            color: antiquewhite;
+            background-color: #1D10B5 ;
+            margin-bottom: 50px;
+            font-size: 40px;
+            padding: 30px 100px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+        }
+    }

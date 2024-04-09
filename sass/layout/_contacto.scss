@@ -1,0 +1,88 @@
+.contacto{
+    background-image: url(../assets/images/pagina-5.png);
+    main{
+            .flex-contacto{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+            .container-contacto{
+                border-radius: 15px;
+                background-color: white;
+                margin: 50px;
+                width: 80%;
+                height: 600px;
+                h3{
+                    padding-left: 10px;
+                    font-size: 40px;
+                    border-top-left-radius: 13px;
+                    border-top-right-radius: 13px;
+                    color: white;
+                    background-color: #242424;
+                }
+                .container-inputs-contacto{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    .top-items{
+                        margin-top: 30px;
+                        margin-bottom: 30px;
+                        display: flex;
+                        width: 95%;
+                        justify-content: space-between;
+                        .input-blank{
+                            padding: 10px;
+                            padding-right: 15%;
+                            padding-left: 15%;
+                            border: #000000 solid 1px;
+                            border-radius: 20px;
+                            text-align:center;
+                        }
+                    }
+                    .bottom-items{
+                        @extend .top-items;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                    .blank-space{
+                        display: flex;
+                        flex-direction: column;
+                        width: 95%;
+                        height: 300px;
+                            input{
+                                &:nth-child(1){
+                                    padding: 10px;
+                                    padding-right: 15%;
+                                    padding-left: 15%;
+                                    border: #000000 solid 1px;
+                                    border-radius: 20px;
+                                    text-align:center;
+                                    margin-top: 30px; 
+                                }
+                                &:nth-child(2){
+                                    padding: 10px;
+                                    padding-right: 15%;
+                                    padding-left: 15%;
+                                    border: #000000 solid 1px;
+                                    border-radius: 20px;
+                                    text-align:center;
+                                    margin-top: 30px;
+                                    height: 300px;
+                                }
+                            }
+                    }
+                    button{
+                        background-color: #5835d6dc;
+                        margin-top: 22px;
+                        padding-top: 10px;
+                        padding-left: 170px;
+                        padding-right: 170px;
+                        padding-bottom: 16px;
+                        border-radius: 20px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
