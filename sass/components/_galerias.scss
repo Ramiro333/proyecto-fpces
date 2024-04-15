@@ -32,4 +32,77 @@
             }
         }
     }
+    @media (max-width:768px) {
+        margin-top: 20px;
+        div{
+            margin-bottom: 20px;
+            gap: 10px;
+            justify-content: space-evenly;
+            div{
+                img{
+                    width: 100%;
+                }
+                p{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+}
+.card-componentes{
+    display: grid;
+    width: 90%;
+    height: 50%;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    "div1 div1 div1 div3 div3 div4 div4 "
+    "div1 div1 div1 div3 div3 div4 div4 "
+    "div1 div1 div1 div5 div5 div6 div6 "
+    "div2 div2 div2 div5 div5 div6 div6 "
+    "div2 div2 div2 div7 div7 div8 div8 "
+    "div2 div2 div2 div7 div7 div8 div8 "
+    ;
+    margin: auto;
+    gap: 30px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    .grafica{
+        grid-area: div1;
+    }
+    .procesador{
+        grid-area: div2;
+    }
+    .ram{
+        grid-area: div3;
+    }
+    .disco{
+        grid-area: div4;
+    }
+    .gabinete{
+        grid-area: div5;
+    }
+    .fuente{
+        grid-area: div6;
+    }
+    .cooler{
+        grid-area: div7;
+    }
+    .pasta{
+        grid-area: div8;
+    }
+    .container-individual-producto{
+        color: white;
+        background-color: #0e0e0e91;
+        display: flex;
+        gap: 30px;
+        .img-izquierda{
+            width: 160px;
+            height: 164px;
+        }
+        .img-derecha{
+            width: 100px;
+            height: 100px;
+        }
+    }
 }

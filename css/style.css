@@ -59,6 +59,38 @@ header {
           color: black;
           text-decoration: none; }
 
+@media (max-width: 1125px) {
+  header {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+    header nav ul li {
+      font-size: 18px;
+      padding: 6px; } }
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 4px;
+    padding-bottom: 4px; }
+    header nav ul {
+      gap: 10px; }
+      header nav ul li {
+        font-size: 12px; } }
+
+@media (max-width: 501px) {
+  header {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px; }
+    header nav {
+      margin: 0px;
+      justify-content: center; }
+      header nav ul {
+        gap: 10px;
+        margin-bottom: 5px; }
+        header nav ul li {
+          font-size: 14px;
+          padding: 3px; } }
+
 .index {
   background-image: url(../assets/images/pagina-1.png); }
   .index main section:nth-child(1) {
@@ -92,12 +124,62 @@ header {
     font-size: 40px;
     background: black;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.618085) 93%, rgba(0, 0, 0, 0.444415) 96%, rgba(0, 0, 0, 0) 100%); }
+    @media (max-width: 768px) {
+      .index main section:nth-child(2) {
+        font-size: 27px; } }
     .index main section:nth-child(2) p {
       margin-top: 10px;
       font-size: 35px;
       color: #497CFF;
       margin-left: 100px;
       margin-right: 6.25rem; }
+
+@media (max-width: 1125px) {
+  .index main section:nth-child(1) {
+    margin-top: 60px; }
+    .index main section:nth-child(1) div h1 {
+      font-size: 60px; }
+    .index main section:nth-child(1) div div p {
+      font-size: 26px; }
+  .index main section:nth-child(2) {
+    padding: 20px;
+    text-shadow: #0E0E0E 0px 0 15px;
+    color: #8D83FF;
+    text-align: center;
+    font-size: 40px;
+    background: black;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.618085) 93%, rgba(0, 0, 0, 0.444415) 96%, rgba(0, 0, 0, 0) 100%);
+    font-size: 30px;
+    padding: 20px; } }
+  @media (max-width: 1125px) and (max-width: 768px) {
+    .index main section:nth-child(2) {
+      font-size: 27px; } }
+
+@media (max-width: 768px) {
+  .index main section:nth-child(1) {
+    margin-top: 40px; }
+    .index main section:nth-child(1) div h1 {
+      font-size: 50px; }
+    .index main section:nth-child(1) div div p {
+      font-size: 18px; }
+  .index main section:nth-child(2) {
+    padding: 20px;
+    text-shadow: #0E0E0E 0px 0 15px;
+    color: #8D83FF;
+    text-align: center;
+    font-size: 40px;
+    background: black;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.618085) 93%, rgba(0, 0, 0, 0.444415) 96%, rgba(0, 0, 0, 0) 100%); } }
+  @media (max-width: 768px) and (max-width: 768px) {
+    .index main section:nth-child(2) {
+      font-size: 27px; } }
+
+@media (max-width: 768px) {
+    .index main section:nth-child(2) p {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 10px;
+      font-size: 25px; } }
 
 .nosotros {
   background-image: url(../assets/images/pagina-4.png); }
@@ -148,6 +230,9 @@ header {
       font-size: 40px;
       background: black;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.618085) 93%, rgba(0, 0, 0, 0.444415) 96%, rgba(0, 0, 0, 0) 100%); }
+      @media (max-width: 768px) {
+        .nosotros main section:nth-child(3) h3 {
+          font-size: 27px; } }
 
 .tercera-seccion {
   margin-top: 40px; }
@@ -178,6 +263,56 @@ header {
         font-size: 30px;
         background-color: #9c92fc93;
         padding-top: 10px; }
+  @media (max-width: 768px) {
+    .tercera-seccion {
+      margin-top: 20px; }
+      .tercera-seccion div {
+        margin-bottom: 20px;
+        gap: 10px;
+        justify-content: space-evenly; }
+        .tercera-seccion div div img {
+          width: 100%; }
+        .tercera-seccion div div p {
+          font-size: 23px; } }
+
+.card-componentes {
+  display: grid;
+  width: 90%;
+  height: 50%;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "div1 div1 div1 div3 div3 div4 div4 " "div1 div1 div1 div3 div3 div4 div4 " "div1 div1 div1 div5 div5 div6 div6 " "div2 div2 div2 div5 div5 div6 div6 " "div2 div2 div2 div7 div7 div8 div8 " "div2 div2 div2 div7 div7 div8 div8 ";
+  margin: auto;
+  gap: 30px;
+  margin-bottom: 60px;
+  margin-top: 60px; }
+  .card-componentes .grafica {
+    grid-area: div1; }
+  .card-componentes .procesador {
+    grid-area: div2; }
+  .card-componentes .ram {
+    grid-area: div3; }
+  .card-componentes .disco {
+    grid-area: div4; }
+  .card-componentes .gabinete {
+    grid-area: div5; }
+  .card-componentes .fuente {
+    grid-area: div6; }
+  .card-componentes .cooler {
+    grid-area: div7; }
+  .card-componentes .pasta {
+    grid-area: div8; }
+  .card-componentes .container-individual-producto {
+    color: white;
+    background-color: #0e0e0e91;
+    display: flex;
+    gap: 30px; }
+    .card-componentes .container-individual-producto .img-izquierda {
+      width: 160px;
+      height: 164px; }
+    .card-componentes .container-individual-producto .img-derecha {
+      width: 100px;
+      height: 100px; }
 
 .FAQ {
   background-image: url(../assets/images/pagina-3.png); }
@@ -292,6 +427,37 @@ header {
           padding-bottom: 16px;
           border-radius: 20px;
           text-align: center; }
+
+.productos-1 {
+  background-image: url(../assets/images/pagina-2.png); }
+  .productos-1 main section:nth-child(1) {
+    margin-top: 60px; }
+    .productos-1 main section:nth-child(1) div:nth-child(1) {
+      background-image: url(../assets/images/xpg-pro.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 800px; }
+      .productos-1 main section:nth-child(1) div:nth-child(1) h1 {
+        color: antiquewhite;
+        text-shadow: #000000 5px 5px 15px;
+        text-align: center;
+        font-size: 80px;
+        padding-top: 30px; }
+    .productos-1 main section:nth-child(1) div:nth-child(2) {
+      padding: 20px;
+      text-shadow: #0E0E0E 0px 0 15px;
+      color: #8D83FF;
+      text-align: center;
+      font-size: 40px;
+      background: black;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.618085) 93%, rgba(0, 0, 0, 0.444415) 96%, rgba(0, 0, 0, 0) 100%); }
+      .productos-1 main section:nth-child(1) div:nth-child(2) p {
+        margin-top: 10px;
+        font-size: 35px;
+        color: #497CFF;
+        margin-left: 100px;
+        margin-right: 6.25rem; }
 
 .newsletter {
   background-color: #497CFF;

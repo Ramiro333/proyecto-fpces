@@ -1,0 +1,56 @@
+@media(max-width: 1125px){
+    .index{
+        main{
+            section{
+                &:nth-child(1){
+                    margin-top: 60px;
+                    div{
+                        h1{
+                            font-size: 60px;
+                        }
+                        div{
+                            p{
+                                font-size: 26px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    @include titulos-secudarios;
+                    font-size: 30px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px) {
+    .index{
+        main{
+            section{
+                &:nth-child(1){
+                    margin-top: 40px;
+                    div{
+                        h1{
+                            font-size: 50px;
+                        }
+                        div{
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    @include titulos-secudarios;
+                    p{
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-top: 10px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -49,6 +49,53 @@ header{
                 }
             }
         }
+    }
+}
+@media (max-width:1125px){
+    header{
+        padding-top: 8px;
+        padding-bottom: 8px;
+        nav{
+            ul{
+                li{
+                    font-size: 18px;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 768px) {
+    header{
+        padding-top: 4px;
+        padding-bottom: 4px;
+        nav{
+            ul{
+                gap: 10px;
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:501px){
+    header{
+        display: block;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        nav{
+            margin: 0px;
+            justify-content:  center;
+            ul{
+                gap: 10px;
+                margin-bottom: 5px;
+                li{
+                    font-size: 14px;
+                    padding: 3px;
+                }
+            }
+        }
     }
 }

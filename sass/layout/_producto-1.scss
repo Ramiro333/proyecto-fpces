@@ -1,0 +1,42 @@
+.productos-1{
+    background-image: url(../assets/images/pagina-2.png); 
+    main{
+        section{
+            &:nth-child(1){
+                margin-top: 60px;
+                div{
+                    &:nth-child(1){
+                        background-image: url(../assets/images/xpg-pro.jpg) ;
+                        background-position: center ;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 800px;
+                        h1{ 
+                            color: antiquewhite;
+                            text-shadow: #000000 5px 5px 15px;
+                            text-align: center;
+                            font-size: 80px;
+                            padding-top: 30px;
+                        }
+                    }
+                    &:nth-child(2){
+                        padding: 20px;
+                        text-shadow: #0E0E0E 0px 0 15px;
+                        color: #8D83FF;
+                        text-align: center;
+                        font-size: 40px;
+                        background: rgb(0,0,0);
+                        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6180847338935574) 93%, rgba(0,0,0,0.44441526610644255) 96%, rgba(0,0,0,0) 100%);
+                        p{
+                            margin-top: 10px;
+                            font-size: 35px;
+                            color: #497CFF;
+                            margin-left: 100px;
+                            margin-right: 6.25rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

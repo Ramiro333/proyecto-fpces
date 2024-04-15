@@ -3,6 +3,14 @@
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+    // @media (max-width:1125px){
+    //     ul{
+    //         li{
+    //             font-size: 18px;
+    //             padding: 6px;
+    //         }
+    //     }
+    // }
 }
 @mixin titulos-secudarios{
     padding: 20px;
@@ -12,4 +20,7 @@
     font-size: 40px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6180847338935574) 93%, rgba(0,0,0,0.44441526610644255) 96%, rgba(0,0,0,0) 100%);
+    @media (max-width:768px){
+        font-size: 27px;
+    }
 }
