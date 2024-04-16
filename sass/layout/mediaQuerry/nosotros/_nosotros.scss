@@ -1,0 +1,117 @@
+@media (max-width:1134px){
+    .nosotros{
+        main{
+            margin-top: 140px;
+            section{
+                &:nth-child(1){
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .nosotros{
+        main{
+            margin-top: 100px;
+            section{
+                &:nth-child(1){
+                    div{
+                        p{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    div{
+                        img{
+                            width: 50%;
+                            height: 260px;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .nosotros{
+        main{
+            margin-top: 100px;
+            section{
+                &:nth-child(1){
+                    h1{
+                        font-size: 48px;
+                    }
+                    div{
+                        p{
+                            font-size: 20px;
+                            padding: 30px;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    margin-top: 30px;
+                    gap: 20px;
+                    div{
+                        flex-direction: column;
+                        img{
+                            width: 70%;
+                            height: 260px;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            width: 90%;
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                        &:nth-child(2){
+                            flex-direction: column;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 425px){
+    .nosotros{
+        main{
+            margin-top: 130px;
+            section{
+                &:nth-child(1){
+                    h1{
+                        font-size: 35px;
+                    }
+                    div{
+                        p{
+                            padding: 10px;
+                            font-size: 18px;
+                            span{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    div{
+                        img{
+                            width: 95%;
+                            height: 200px;
+                        }
+                        p{
+                            width: 100%;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

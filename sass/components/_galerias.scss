@@ -48,6 +48,21 @@
             }
         }
     }
+    @media (max-width:522px){
+        div{
+            div{
+                width: 40%;
+            }
+        }
+    }
+    @media (max-width:425px){
+        //podria agregar un carrusel en este punto
+        div{
+            div{
+                width: 70%;
+            }
+        }
+    }
 }
 .card-componentes{
     display: grid;

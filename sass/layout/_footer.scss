@@ -8,6 +8,7 @@ footer{
     padding-bottom: 15px;
     div {
         &:nth-child(1){
+            margin-left: 10px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -23,28 +24,34 @@ footer{
         }
         a{
             margin-right: 40px;
-            gap: 40px;
             img{
                 width: 30px;
                 height: 30px;
             }
         }
-
+    }    
+}
+@media (max-width: 1125px){
+    footer{
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
-    
-    // &:nth-child(1){
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 8px;
-    //         img{
-    //             width: 40px;
-    //             height: 40px;
-    //         }
-    //         p{
-    //             color: antiquewhite;
-    //             font-weight: bolder;
-    //             font-size: 1.75rem;
-    //         }
-    // }
-    
+}
+@media (max-width: 502px){
+    footer{
+        div{
+            &:nth-child(1){
+                p{
+                    font-size: 24px;
+                }
+            }
+            a{
+                margin-right: 30px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
 }

@@ -1,10 +1,72 @@
 .newsletter{
     background-color: #497CFF;
     padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
     p{
+
         font-size: 30px;
+    }
+    div{
+        display: flex;
+        justify-content: flex-end;
+
+        gap: 5px;
+        button{
+            background-color: rgb(97, 160, 255);
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 4px;
+        }
+
+    }
+}
+@media (max-width: 844px) {
+    .newsletter{
+        padding: 20px;
+        p{
+            font-size: 24px;
+            width: 70%;
+        }
+        div{
+            width: 30%;
+            align-items: center;
+            input{
+                height: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 644px){
+    .newsletter{
+        flex-direction: column;
+        gap: 10px;
+        p{
+            width: 100%;
+            text-align: center;
+        }
+        div{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 502px) {
+    .newsletter{
+        div{
+            button{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media (max-width:389px){
+    .newsletter{
+        padding:10px ;
+        p{
+            font-size: 15px;
+        }
     }
 }

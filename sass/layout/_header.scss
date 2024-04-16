@@ -10,6 +10,7 @@ header{
     width: 100%;
     align-items: center;
     z-index: 3;
+    padding-left: 10px;
     div{
         display: flex;
         align-items: center;
@@ -34,7 +35,7 @@ header{
                 background-color: rgb(250, 235, 215);
                 padding: 15px;
                 border: 2px solid black;
-                border-radius: 18px;
+                border-radius: 8px;
                 list-style:none;
                 transition: background-color 0.5s;
                 &:hover{
@@ -78,13 +79,24 @@ header{
                 }
             }
         }
+        div{
+            justify-content: center;
+            margin: 10px 0px;
+        }
     }
 }
 @media(max-width:501px){
     header{
-        display: block;
+        flex-direction: column;
         padding-top: 2px;
         padding-bottom: 2px;
+        padding-left: 0;
+        div{
+            justify-content: center;
+            p{
+                font-size: 18px;
+            }
+        }
         nav{
             margin: 0px;
             justify-content:  center;
@@ -95,6 +107,15 @@ header{
                     font-size: 14px;
                     padding: 3px;
                 }
+            }
+        }
+    }
+}
+@media(max-width:350px){
+    header{
+        nav{
+            ul{
+                gap: 1px;
             }
         }
     }
