@@ -1,5 +1,16 @@
 .productos-1{
     background-image: url(../assets/images/pagina-2.png); 
+    header{
+        nav{
+            ul{
+                li{
+                    &:nth-child(2){
+                        background-color: #948aff;
+                    }
+                }
+            }
+        }
+    }
     main{
         section{
             &:nth-child(1){

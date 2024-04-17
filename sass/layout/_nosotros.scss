@@ -1,5 +1,16 @@
 .nosotros{
     background-image: url(../assets/images/pagina-4.png);
+    header{
+        nav{
+            ul{
+                li{
+                    &:nth-child(3){
+                        background-color: #948aff;
+                    }
+                }
+            }
+        }
+    }
     main{
         margin-top: 120px;
         section{

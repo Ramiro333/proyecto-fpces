@@ -1,17 +1,28 @@
-.contacto{
+.contacto {
     background-image: url(../assets/images/pagina-5.png);
-    main{
-            .flex-contacto{
+    header{
+        nav{
+            ul{
+                li{
+                    &:nth-child(5){
+                        background-color: #948aff;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .flex-contacto {
             display: flex;
             justify-content: center;
             margin-top: 100px;
-            .container-contacto{
+            .container-contacto {
                 border-radius: 15px;
                 background-color: white;
                 margin: 50px;
                 width: 80%;
                 height: 600px;
-                h3{
+                h3 {
                     padding-left: 10px;
                     font-size: 40px;
                     border-top-left-radius: 13px;
@@ -19,65 +30,64 @@
                     color: white;
                     background-color: #242424;
                 }
-                .container-inputs-contacto{
+                .container-inputs-contacto {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-                    .top-items{
+                    width: 100%;
+                    .top-items {
                         margin-top: 30px;
                         margin-bottom: 30px;
                         display: flex;
                         width: 95%;
                         justify-content: space-between;
-                        .input-blank{
+                        input {
+                            width: 45%;
                             padding: 10px;
-                            padding-right: 15%;
-                            padding-left: 15%;
                             border: #000000 solid 1px;
                             border-radius: 20px;
-                            text-align:center;
+                            text-align: center;
                         }
                     }
-                    .bottom-items{
+                    .bottom-items {
                         @extend .top-items;
                         margin-top: 0px;
                         margin-bottom: 0px;
                     }
-                    .blank-space{
+                    .blank-space {
                         display: flex;
                         flex-direction: column;
                         width: 95%;
                         height: 300px;
-                            input{
-                                &:nth-child(1){
-                                    padding: 10px;
-                                    padding-right: 15%;
-                                    padding-left: 15%;
-                                    border: #000000 solid 1px;
-                                    border-radius: 20px;
-                                    text-align:center;
-                                    margin-top: 30px; 
-                                }
-                                &:nth-child(2){
-                                    padding: 10px;
-                                    padding-right: 15%;
-                                    padding-left: 15%;
-                                    border: #000000 solid 1px;
-                                    border-radius: 20px;
-                                    text-align:center;
-                                    margin-top: 30px;
-                                    height: 300px;
-                                }
+                        input {
+                            &:nth-child(1) {
+                                padding: 10px;
+                                padding-right: 15%;
+                                padding-left: 15%;
+                                border: #000000 solid 1px;
+                                border-radius: 20px;
+                                text-align: center;
+                                margin-top: 30px;
                             }
+                            &:nth-child(2) {
+                                padding: 10px;
+                                padding-right: 15%;
+                                padding-left: 15%;
+                                border: #000000 solid 1px;
+                                border-radius: 20px;
+                                text-align: center;
+                                margin-top: 30px;
+                                height: 60%;
+                            }
+                        }
                     }
-                    button{
+                    button {
                         background-color: #5835d6dc;
                         margin-top: 22px;
-                        padding-top: 10px;
-                        padding-left: 170px;
-                        padding-right: 170px;
-                        padding-bottom: 16px;
+                        width: 90%;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
                         border-radius: 20px;
                         text-align: center;
                     }

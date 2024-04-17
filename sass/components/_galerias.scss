@@ -1,4 +1,4 @@
-.tercera-seccion{
+.card-index{
     margin-top: 40px;
     div{
         flex-wrap: wrap;
@@ -39,19 +39,13 @@
             gap: 10px;
             justify-content: space-evenly;
             div{
+                width: 40%;
                 img{
                     width: 100%;
                 }
                 p{
                     font-size: 23px;
                 }
-            }
-        }
-    }
-    @media (max-width:522px){
-        div{
-            div{
-                width: 40%;
             }
         }
     }

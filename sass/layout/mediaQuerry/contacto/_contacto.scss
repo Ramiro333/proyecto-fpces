@@ -1,0 +1,23 @@
+@media(max-width: 425px){
+    .contacto{
+        main{
+            .flex-contacto{
+                .container-contacto{
+                    h3{
+                        text-align: center;
+                    }
+                    height: 704px;
+                    .container-inputs-contacto{
+                        .top-items{
+                            flex-direction: column;
+                            gap: 20px;
+                            input{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
