@@ -5,7 +5,7 @@
             ul{
                 li{
                     &:nth-child(3){
-                        background-color: #948aff;
+                        background-color: map-get($colores,lila );
                     }
                 }
             }
@@ -16,7 +16,7 @@
         section{
             &:nth-child(1){
                 h1{
-                    color: antiquewhite;
+                    color: map-get($colores,blanco );
                     text-shadow: #000000 5px 5px 30px;
                     text-align: center;
                     font-size: 70px;
@@ -31,7 +31,7 @@
                         padding: 40px;
                         text-align: center;
                         font-size: 25px;
-                        color: #ffffff;
+                        color: map-get($colores,blanco );
                         width: 90%;
                     }
                 }
@@ -40,7 +40,7 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                margin-top: 70px;
+                margin-top: 200px;
                 div{
                     margin: 10px 3% 10px 3%;
                     display: flex;
@@ -50,7 +50,7 @@
                     }
                     p{
                         width: 70%;
-                        color: white;
+                        color: map-get($colores,blanco );
                         text-shadow: #0E0E0E 4px 0 5px;
                         font-size: 23px;
                         margin-left: 50px;
@@ -71,3 +71,16 @@
         }
     }
 }
+// pequeña prueba de animaciones
+ @keyframes slide-top {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+  }
+  .slide-top{
+    animation: slide-top 2s both;
+}
+  

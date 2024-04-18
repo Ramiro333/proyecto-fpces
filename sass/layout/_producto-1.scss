@@ -5,7 +5,7 @@
             ul{
                 li{
                     &:nth-child(2){
-                        background-color: #948aff;
+                        background-color: map-get($colores,lila );
                     }
                 }
             }
@@ -23,7 +23,7 @@
                         background-repeat: no-repeat;
                         height: 800px;
                         h1{ 
-                            color: antiquewhite;
+                            color: map-get($colores,blanco );
                             text-shadow: #000000 5px 5px 15px;
                             text-align: center;
                             font-size: 80px;
@@ -33,7 +33,7 @@
                     &:nth-child(2){
                         padding: 20px;
                         text-shadow: #0E0E0E 0px 0 15px;
-                        color: #8D83FF;
+                        color: map-get($colores,blanco );
                         text-align: center;
                         font-size: 40px;
                         background: rgb(0,0,0);
@@ -41,7 +41,7 @@
                         p{
                             margin-top: 10px;
                             font-size: 35px;
-                            color: #497CFF;
+                            color: map-get($colores,celeste );
                             margin-left: 100px;
                             margin-right: 6.25rem;
                         }

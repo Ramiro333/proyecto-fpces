@@ -25,15 +25,16 @@ header {
   align-items: center;
   z-index: 3;
   padding-left: 10px; }
-  header div {
+  header div a {
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 8px; }
-    header div img {
+    header div a img {
       width: 40px;
       height: 40px; }
-    header div p {
-      color: antiquewhite;
+    header div a p {
+      color: white;
       font-weight: bolder;
       font-size: 1.75rem; }
   header nav {
@@ -61,14 +62,14 @@ header {
       gap: 1.25rem; }
       header nav ul li {
         font-size: 20px;
-        background-color: antiquewhite;
+        background-color: white;
         padding: 15px;
         border: 2px solid black;
         border-radius: 8px;
         list-style: none;
         transition: background-color 0.5s; }
         header nav ul li a {
-          color: black;
+          color: #242424;
           text-decoration: none; }
 
 @media (max-width: 1125px) {
@@ -118,11 +119,11 @@ header {
 .index {
   background-image: url(../assets/images/pagina-1.png); }
   .index header nav ul li:nth-child(1) {
-    background-color: #948aff; }
+    background-color: #723fff; }
   .index main section:nth-child(1) {
     margin-top: 100px; }
     .index main section:nth-child(1) div h1 {
-      color: antiquewhite;
+      color: white;
       text-shadow: #000000 5px 5px 15px;
       text-align: center;
       font-size: 80px;
@@ -132,7 +133,7 @@ header {
       display: flex;
       flex-direction: column; }
       .index main section:nth-child(1) div div p {
-        color: #dff9ff;
+        color: white;
         text-shadow: #0E0E0E 0px 0 5px;
         padding: 30px;
         margin-top: 40px;
@@ -241,11 +242,11 @@ header {
 .nosotros {
   background-image: url(../assets/images/pagina-4.png); }
   .nosotros header nav ul li:nth-child(3) {
-    background-color: #948aff; }
+    background-color: #723fff; }
   .nosotros main {
     margin-top: 120px; }
     .nosotros main section:nth-child(1) h1 {
-      color: antiquewhite;
+      color: white;
       text-shadow: #000000 5px 5px 30px;
       text-align: center;
       font-size: 70px;
@@ -259,13 +260,13 @@ header {
         padding: 40px;
         text-align: center;
         font-size: 25px;
-        color: #ffffff;
+        color: white;
         width: 90%; }
     .nosotros main section:nth-child(2) {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin-top: 70px; }
+      margin-top: 200px; }
       .nosotros main section:nth-child(2) div {
         margin: 10px 3% 10px 3%;
         display: flex;
@@ -292,6 +293,15 @@ header {
       @media (max-width: 768px) {
         .nosotros main section:nth-child(3) h3 {
           font-size: 27px; } }
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-100px); } }
+
+.slide-top {
+  animation: slide-top 2s both; }
 
 @media (max-width: 1134px) {
   .nosotros main {
@@ -361,7 +371,7 @@ header {
     justify-content: center;
     margin-bottom: 40px; }
     .card-index div div {
-      background-color: antiquewhite;
+      background-color: white;
       border-radius: 10px;
       width: 25%;
       transition: transform 0.3s ease;
@@ -378,8 +388,9 @@ header {
         padding-bottom: 5px;
         padding-left: 10px;
         font-size: 30px;
-        background-color: #9c92fc93;
-        padding-top: 10px; }
+        background-color: #723fff;
+        padding-top: 10px;
+        text-align: center; }
   @media (max-width: 768px) {
     .card-index {
       margin-top: 20px; }
@@ -441,7 +452,7 @@ header {
   border: 4px solid black; }
 
 .fondo-personalizado-violeta {
-  background-color: #8e009b; }
+  background-color: rgba(192, 82, 255, 0.699); }
 
 .accordion {
   margin-top: 20px; }
@@ -449,12 +460,12 @@ header {
 .FAQ {
   background-image: url(../assets/images/pagina-3.png); }
   .FAQ header nav ul li:nth-child(4) {
-    background-color: #948aff; }
+    background-color: #723fff; }
   .FAQ main section:nth-child(1) {
     margin: 100px 5% 50px 5%; }
     .FAQ main section:nth-child(1) h1 {
       text-shadow: #747474 5px 5px 30px;
-      color: antiquewhite;
+      color: white;
       font-size: 80px;
       margin-bottom: 50px; }
     .FAQ main section:nth-child(1) div .container-blanco, .FAQ main section:nth-child(1) div .container-negro {
@@ -535,7 +546,7 @@ header {
 .contacto {
   background-image: url(../assets/images/pagina-5.png); }
   .contacto header nav ul li:nth-child(5) {
-    background-color: #948aff; }
+    background-color: #723fff; }
   .contacto main .flex-contacto {
     display: flex;
     justify-content: center;
@@ -597,7 +608,7 @@ header {
             margin-top: 30px;
             height: 60%; }
         .contacto main .flex-contacto .container-contacto .container-inputs-contacto button {
-          background-color: #5835d6dc;
+          background-color: #723fff;
           margin-top: 22px;
           width: 90%;
           padding-top: 20px;
@@ -619,7 +630,7 @@ header {
 .productos-1 {
   background-image: url(../assets/images/pagina-2.png); }
   .productos-1 header nav ul li:nth-child(2) {
-    background-color: #948aff; }
+    background-color: #723fff; }
   .productos-1 main section:nth-child(1) {
     margin-top: 60px; }
     .productos-1 main section:nth-child(1) div:nth-child(1) {
@@ -629,7 +640,7 @@ header {
       background-repeat: no-repeat;
       height: 800px; }
       .productos-1 main section:nth-child(1) div:nth-child(1) h1 {
-        color: antiquewhite;
+        color: white;
         text-shadow: #000000 5px 5px 15px;
         text-align: center;
         font-size: 80px;
@@ -637,7 +648,7 @@ header {
     .productos-1 main section:nth-child(1) div:nth-child(2) {
       padding: 20px;
       text-shadow: #0E0E0E 0px 0 15px;
-      color: #8D83FF;
+      color: white;
       text-align: center;
       font-size: 40px;
       background: black;
@@ -663,7 +674,7 @@ header {
     justify-content: flex-end;
     gap: 5px; }
     .newsletter div button {
-      background-color: #61a0ff;
+      background-color: white;
       font-size: 20px;
       border-radius: 10px;
       padding: 4px; }
@@ -702,7 +713,7 @@ header {
       font-size: 15px; } }
 
 footer {
-  background: #3a0068;
+  background: #2a0d50bd;
   background: linear-gradient(0deg, rgba(58, 0, 104, 0.94) 0%, rgba(79, 0, 116, 0.79) 68%, rgba(17, 0, 26, 0.17) 100%);
   align-items: center;
   justify-content: space-between;
@@ -718,7 +729,7 @@ footer {
       width: 40px;
       height: 40px; }
     footer div:nth-child(1) p {
-      color: antiquewhite;
+      color: white;
       font-weight: bolder;
       font-size: 1.75rem; }
   footer div a {

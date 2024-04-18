@@ -5,7 +5,7 @@
             ul{
                 li{
                     &:nth-child(1){
-                        background-color: #948aff;
+                        background-color: map-get($colores,lila );
                     }
                 }
             }
@@ -17,7 +17,7 @@
                 margin-top: 100px;
                 div{
                     h1{
-                        color: antiquewhite;
+                        color: map-get($colores,blanco );
                         text-shadow: #000000 5px 5px 15px;
                         text-align: center;
                         font-size: 80px;
@@ -28,7 +28,7 @@
                         display: flex;
                         flex-direction: column;
                         p{
-                            color: rgb(223, 249, 255);
+                            color:map-get($colores,blanco );
                             text-shadow: #0E0E0E 0px 0 5px;
                             padding: 30px;
                             margin-top: 40px;
@@ -47,7 +47,7 @@
                 p{
                     margin-top: 10px;
                     font-size: 35px;
-                    color: #497CFF;
+                    color: map-get($colores,celeste );
                     margin-left: 100px;
                     margin-right: 6.25rem;
                 }

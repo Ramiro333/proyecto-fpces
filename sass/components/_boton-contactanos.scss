@@ -5,7 +5,7 @@
         box-shadow: 0px 8px 30px #000000;
         border: 2px solid black;
         color: antiquewhite;
-        background-color: #1D10B5 ;
+        background-color:map-get($colores, azul ) ;
         margin-bottom: 50px;
         font-size: 40px;
         padding: 30px 100px;

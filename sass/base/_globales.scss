@@ -7,7 +7,7 @@
     font-style: normal;
 }
 body{
-    background-color: #2a0d50bd;
+    background-color: map-get($colores, violeta-de-fondo );
     background-position: center ;
     background-size: cover;
     background-repeat: no-repeat;

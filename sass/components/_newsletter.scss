@@ -1,5 +1,5 @@
 .newsletter{
-    background-color: #497CFF;
+    background-color: map-get($colores, celeste);
     padding: 30px;
     padding-left: 80px;
     padding-right: 80px;
@@ -15,7 +15,7 @@
 
         gap: 5px;
         button{
-            background-color: rgb(97, 160, 255);
+            background-color:map-get($colores, blanco );
             font-size: 20px;
             border-radius: 10px;
             padding: 4px;
