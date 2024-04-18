@@ -332,6 +332,7 @@ header {
       margin-top: 30px;
       gap: 20px; }
       .nosotros main section:nth-child(2) div {
+        margin-top: 100px;
         flex-direction: column; }
         .nosotros main section:nth-child(2) div img {
           width: 70%;
