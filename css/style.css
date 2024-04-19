@@ -142,7 +142,8 @@ header {
         margin-right: 40px;
         font-size: 30px;
         background-color: #4b4b4b81;
-        text-align: center; }
+        text-align: center;
+        text-decoration: none; }
   .index main section:nth-child(2) {
     padding: 20px;
     text-shadow: #0E0E0E 0px 0 15px;
@@ -377,9 +378,13 @@ header {
       width: 25%;
       transition: transform 0.3s ease;
       z-index: 1; }
+      .card-index div div a {
+        text-decoration: none; }
       .card-index div div:hover {
         transform: scale(1.2);
         z-index: 2; }
+        .card-index div div:hover p {
+          color: red; }
       .card-index div div img {
         background-size: cover;
         width: 100%; }
@@ -391,7 +396,8 @@ header {
         font-size: 30px;
         background-color: #723fff;
         padding-top: 10px;
-        text-align: center; }
+        text-align: center;
+        color: white; }
   @media (max-width: 768px) {
     .card-index {
       margin-top: 20px; }

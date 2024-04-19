@@ -13,9 +13,17 @@
             width: 25%;
             transition: transform 0.3s ease;
             z-index: 1;
+            a{
+                text-decoration: none;
+                &:hover{
+                }
+            }
             &:hover{
                 transform: scale(1.2);
-                z-index: 2
+                z-index: 2;
+                p{
+                    color: red;
+                }
             }
             img{
                 background-size: cover;
@@ -30,6 +38,9 @@
                 background-color:map-get($colores, lila );
                 padding-top: 10px;
                 text-align: center;
+                color: map-get($colores, blanco );
+                
+
             }
         }
     }
