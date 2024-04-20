@@ -363,7 +363,9 @@ header {
       font-size: 18px; } }
 
 .card-index {
-  margin-top: 40px; }
+  width: 80%;
+  margin: auto;
+  margin-top: 60px; }
   .card-index div {
     flex-wrap: wrap;
     gap: 70px;
@@ -371,23 +373,24 @@ header {
     align-items: stretch;
     justify-content: center;
     margin-bottom: 40px; }
-    .card-index div div {
+    .card-index div .container-producto {
       background-color: white;
       border-radius: 10px;
       width: 25%;
       transition: transform 0.3s ease;
       z-index: 1; }
-      .card-index div div a {
+      .card-index div .container-producto a {
         text-decoration: none; }
-      .card-index div div:hover {
-        transform: scale(1.2);
-        z-index: 2; }
-        .card-index div div:hover p {
-          color: red; }
-      .card-index div div img {
-        background-size: cover;
-        width: 100%; }
-      .card-index div div p {
+        .card-index div .container-producto a div {
+          background: none;
+          display: none; }
+        .card-index div .container-producto a .texto {
+          display: none; }
+          .card-index div .container-producto a .texto ul {
+            background: none; }
+            .card-index div .container-producto a .texto ul li {
+              background: none; }
+      .card-index div .container-producto p {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         padding-bottom: 5px;
@@ -397,6 +400,40 @@ header {
         padding-top: 10px;
         text-align: center;
         color: white; }
+      .card-index div .container-producto img {
+        background-size: cover;
+        width: 100%; }
+      .card-index div .container-producto:hover {
+        transform: scale(1.2);
+        z-index: 2; }
+        .card-index div .container-producto:hover p {
+          color: red; }
+        .card-index div .container-producto:hover .container-interno {
+          backdrop-filter: blur(3px);
+          border-radius: 10px;
+          width: 100%;
+          display: block;
+          position: absolute;
+          text-align: center;
+          height: 100%; }
+          .card-index div .container-producto:hover .container-interno .texto {
+            display: block;
+            position: absolute;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 97%; }
+          .card-index div .container-producto:hover .container-interno ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80%; }
+            .card-index div .container-producto:hover .container-interno ul li {
+              padding: 6px;
+              color: red;
+              font-size: 20px; }
   @media (max-width: 768px) {
     .card-index {
       margin-top: 20px; }
@@ -404,14 +441,14 @@ header {
         margin-bottom: 20px;
         gap: 10px;
         justify-content: space-evenly; }
-        .card-index div div {
+        .card-index div .container-producto {
           width: 40%; }
-          .card-index div div img {
+          .card-index div .container-producto img {
             width: 100%; }
-          .card-index div div p {
+          .card-index div .container-producto p {
             font-size: 23px; } }
   @media (max-width: 425px) {
-    .card-index div div {
+    .card-index div .container-producto {
       width: 70%; } }
 
 .card-componentes {
@@ -621,6 +658,38 @@ header {
           padding-bottom: 20px;
           border-radius: 20px;
           text-align: center; }
+  .contacto main section:nth-child(2) {
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    background-color: #1111119f;
+    padding: 20px; }
+    .contacto main section:nth-child(2) div h3 {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px; }
+    .contacto main section:nth-child(2) div p {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 10px; }
+    .contacto main section:nth-child(2) div h4 {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 10px; }
+    .contacto main section:nth-child(2) div ul li {
+      margin-bottom: 10px; }
+      .contacto main section:nth-child(2) div ul li a {
+        color: red;
+        text-decoration: none;
+        font-size: 30px; }
+        .contacto main section:nth-child(2) div ul li a:hover {
+          color: #723fff;
+          transition: color .5s ease-out; }
+    .contacto main section:nth-child(2) iframe {
+      width: 45%;
+      height: 400px; }
 
 @media (max-width: 425px) {
   .contacto main .flex-contacto .container-contacto {

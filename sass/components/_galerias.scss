@@ -1,5 +1,7 @@
 .card-index{
-    margin-top: 40px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
     div{
         flex-wrap: wrap;
         gap: 70px;
@@ -7,7 +9,7 @@
         align-items: stretch;
         justify-content: center;
         margin-bottom: 40px;
-        div{
+        .container-producto{
             background-color: map-get($colores, blanco);
             border-radius: 10px;
             width: 25%;
@@ -15,19 +17,19 @@
             z-index: 1;
             a{
                 text-decoration: none;
-                &:hover{
+                div{
+                    background: none;
+                    display: none;
                 }
-            }
-            &:hover{
-                transform: scale(1.2);
-                z-index: 2;
-                p{
-                    color: red;
+                .texto{
+                    display: none;
+                    ul{
+                        background: none;
+                        li{
+                            background: none;
+                        }
+                    }
                 }
-            }
-            img{
-                background-size: cover;
-                width:100%;
             }
             p{
                 border-bottom-left-radius: 10px;
@@ -39,8 +41,49 @@
                 padding-top: 10px;
                 text-align: center;
                 color: map-get($colores, blanco );
+            }
+            img{
+                background-size: cover;
+                width:100%;
+            }
+            &:hover{
+                transform: scale(1.2);
+                z-index: 2;
                 
-
+                p{
+                    color: red;
+                }
+                .container-interno{
+                    backdrop-filter:blur(3px);
+                    border-radius: 10px;
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    text-align: center;
+                    height: 100%;
+                    .texto{
+                        display: block;
+                        position: absolute;
+                        border-bottom-left-radius: 0px;
+                        border-bottom-right-radius: 0px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        width: 97%;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 80%;
+                        li{
+                            padding: 6px;
+                            color: rgb(255, 0, 0);
+                            font-size: 20px;
+                        }
+                    }
+                }
+                
             }
         }
     }
@@ -50,7 +93,7 @@
             margin-bottom: 20px;
             gap: 10px;
             justify-content: space-evenly;
-            div{
+            .container-producto{
                 width: 40%;
                 img{
                     width: 100%;
@@ -64,7 +107,7 @@
     @media (max-width:425px){
         //podria agregar un carrusel en este punto
         div{
-            div{
+            .container-producto{
                 width: 70%;
             }
         }
