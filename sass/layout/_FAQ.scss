@@ -23,6 +23,7 @@
                 }
                 div{
                     .container-blanco{
+                        border: 4px solid black;
                         display: flex;
                         font-size: 19px;
                         gap: 30px;
@@ -32,6 +33,7 @@
                         align-items: center;
                         h2{
                             width: 30%;
+                            border-right: solid black;
                             br{ 
                                 display: none; 
                             }
@@ -44,8 +46,12 @@
                     .container-negro{
                         // utilizo el @extend para demostrar q lo domino, para no repetir pasadas tecnicas de seleccion de elementos
                         @extend .container-blanco;
+                        border: 4px solid white;
                         background-color: #00000085;
                         color: rgb(255, 255, 255);
+                        h2{
+                            border-right: solid white;
+                        }
                     }
                 }
             }

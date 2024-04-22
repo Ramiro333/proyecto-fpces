@@ -32,15 +32,23 @@
                         .container-blanco{
                             flex-direction: column;
                             h2{
-                                justify-content: center;
                                 text-align: center;
                                 width: 100%;
+                                border-right: none;
+                                border-bottom: solid black;
                             }
                             p{
                                 width: 90%;
                             }
                         }
+                        .container-negro{
+                            h2{
+                                border-right: none;
+                                border-bottom: solid white;
+                            }
+                        }
                     }
+                    
                 }
             }
         }

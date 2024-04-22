@@ -21,3 +21,22 @@
         }
     }
 }
+@media (max-width:640px){
+    .contacto{
+        main{
+            section{
+                &:nth-child(2){
+                    flex-direction: column;
+                    div{
+                        text-align: center;
+                    }
+                    iframe{
+                        margin: 30px auto ;
+
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
