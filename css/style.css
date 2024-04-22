@@ -284,7 +284,8 @@ header {
           margin-left: 50px;
           margin-right: 50px; }
         .nosotros main section:nth-child(2) div:nth-child(2) {
-          flex-direction: row-reverse; }
+          flex-direction: row-reverse;
+          animation-delay: 1s; }
     .nosotros main section:nth-child(3) h3 {
       padding: 20px;
       text-shadow: #0E0E0E 0px 0 15px;
@@ -541,7 +542,8 @@ header {
       font-size: 80px;
       margin-bottom: 50px; }
     .FAQ main section:nth-child(1) div .container-blanco, .FAQ main section:nth-child(1) div .container-negro {
-      border: 4px solid black;
+      border-bottom: 12px double black;
+      border-left: 12px double black;
       display: flex;
       font-size: 19px;
       gap: 30px;
@@ -550,18 +552,26 @@ header {
       background-color: rgba(255, 255, 255, 0.527);
       align-items: center; }
       .FAQ main section:nth-child(1) div .container-blanco h2, .FAQ main section:nth-child(1) div .container-negro h2 {
-        width: 30%;
-        border-right: solid black; }
+        width: 30%; }
         .FAQ main section:nth-child(1) div .container-blanco h2 br, .FAQ main section:nth-child(1) div .container-negro h2 br {
           display: none; }
       .FAQ main section:nth-child(1) div .container-blanco p, .FAQ main section:nth-child(1) div .container-negro p {
+        padding-left: 10px;
+        border-left: solid black;
         width: 70%; }
     .FAQ main section:nth-child(1) div .container-negro {
-      border: 4px solid white;
+      border-top: none;
+      border-left: none;
+      border-bottom: 12px double white;
+      border-right: 12px double white;
       background-color: #00000085;
       color: white; }
       .FAQ main section:nth-child(1) div .container-negro h2 {
-        border-right: solid white; }
+        margin-right: 3px; }
+      .FAQ main section:nth-child(1) div .container-negro p {
+        padding-left: 10px;
+        margin-left: 15px;
+        border-left: solid white; }
 
 @media (max-width: 789px) {
   .FAQ main section:nth-child(1) h1 {
@@ -657,12 +667,14 @@ header {
           display: flex;
           width: 95%;
           justify-content: space-between; }
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .top-items label, .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items label {
+            display: none; }
           .contacto main .flex-contacto .container-contacto .container-inputs-contacto .top-items input, .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items input {
             width: 45%;
             padding: 10px;
             border: #000000 solid 1px;
             border-radius: 20px;
-            text-align: center; }
+            text-align: left; }
         .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items {
           margin-top: 0px;
           margin-bottom: 0px; }
@@ -671,21 +683,20 @@ header {
           flex-direction: column;
           width: 95%;
           height: 300px; }
-          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space input:nth-child(1) {
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space .motivo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
             padding: 10px;
-            padding-right: 15%;
-            padding-left: 15%;
             border: #000000 solid 1px;
             border-radius: 20px;
             text-align: center;
             margin-top: 30px; }
-          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space input:nth-child(2) {
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space input:nth-child(3) {
             padding: 10px;
-            padding-right: 15%;
-            padding-left: 15%;
             border: #000000 solid 1px;
             border-radius: 20px;
-            text-align: center;
+            text-align: left;
             margin-top: 30px;
             height: 60%; }
         .contacto main .flex-contacto .container-contacto .container-inputs-contacto button {
@@ -707,14 +718,16 @@ header {
     .contacto main section:nth-child(2) div h3 {
       font-size: 30px;
       color: white;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      border-bottom: 2px solid white; }
     .contacto main section:nth-child(2) div p {
       font-size: 20px;
       color: white;
       margin-bottom: 10px; }
     .contacto main section:nth-child(2) div h4 {
       font-size: 30px;
-      color: white;
+      border-bottom: 2px solid #723fff;
+      color: #723fff;
       margin-bottom: 10px; }
     .contacto main section:nth-child(2) div ul li {
       margin-bottom: 10px; }
@@ -738,7 +751,9 @@ header {
       flex-direction: column;
       gap: 20px; }
       .contacto main .flex-contacto .container-contacto .container-inputs-contacto .top-items input, .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items input {
-        width: 90%; } }
+        width: 90%; }
+    .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space .motivo {
+      width: 100%; } }
 
 @media (max-width: 640px) {
   .contacto main section:nth-child(2) {
@@ -747,7 +762,8 @@ header {
       text-align: center; }
     .contacto main section:nth-child(2) iframe {
       margin: 30px auto;
-      width: 80%; } }
+      width: 80%;
+      height: 250px; } }
 
 .productos-1 {
   background-image: url(../assets/images/pagina-2.png); }
@@ -779,7 +795,7 @@ header {
       .productos-1 main section:nth-child(1) div:nth-child(2) p {
         width: 90%;
         margin-top: 10px;
-        font-size: 35px;
+        font-size: 30px;
         color: #497CFF;
         margin: auto; }
 

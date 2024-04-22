@@ -42,12 +42,15 @@
                         display: flex;
                         width: 95%;
                         justify-content: space-between;
+                        label{
+                            display: none;
+                        }
                         input {
                             width: 45%;
                             padding: 10px;
                             border: #000000 solid 1px;
                             border-radius: 20px;
-                            text-align: center;
+                            text-align: left;
                         }
                     }
                     .bottom-items {
@@ -60,23 +63,22 @@
                         flex-direction: column;
                         width: 95%;
                         height: 300px;
+                        .motivo {
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 60%;
+                            padding: 10px;
+                            border: #000000 solid 1px;
+                            border-radius: 20px;
+                            text-align: center;
+                            margin-top: 30px;
+                        }
                         input {
-                            &:nth-child(1) {
+                            &:nth-child(3) {
                                 padding: 10px;
-                                padding-right: 15%;
-                                padding-left: 15%;
                                 border: #000000 solid 1px;
                                 border-radius: 20px;
-                                text-align: center;
-                                margin-top: 30px;
-                            }
-                            &:nth-child(2) {
-                                padding: 10px;
-                                padding-right: 15%;
-                                padding-left: 15%;
-                                border: #000000 solid 1px;
-                                border-radius: 20px;
-                                text-align: center;
+                                text-align: left;
                                 margin-top: 30px;
                                 height: 60%;
                             }
@@ -108,7 +110,9 @@
                         font-size: 30px;
                         color: map-get($colores, blanco );
                         margin-bottom: 10px;
+                        border-bottom: 2px solid map-get($colores, blanco );
                     }
+                    
                     p{
                         font-size: 20px;
                         color: map-get($colores, blanco );
@@ -116,7 +120,8 @@
                     }
                     h4{
                         font-size: 30px;
-                        color: map-get($colores, blanco );
+                        border-bottom: 2px solid map-get($colores, lila );
+                        color: map-get($colores, lila );
                         margin-bottom: 10px;
                     }
                     ul{

@@ -37,26 +37,37 @@
     </header>
     <main>
         <section class="flex-contacto">
-            <div class="container-contacto">
+            <form class="container-contacto">
                 <h3>contacto</h3>
                 <div class="container-inputs-contacto">
                     <div class="top-items">
-                        <input type="text" id="user" name="usuario" placeholder="nombre" class="input-blank">
-                        <!-- <label for="user"></label> -->
-                        <input type="text" id="user" name="usuario" placeholder="email" class="input-blank">
-                        <!-- <label for="user"></label> -->
+                        <label for="user"></label>
+                        <input type="text" name="usuario" placeholder="nombre" class="input-blank">
+                        <label for="email"></label>
+                        <input type="text" name="email" placeholder="email" class="input-blank">
+                        
                     </div>
                     <div class="bottom-items">
-                        <input type="text" id="user" name="usuario" placeholder="telefono" class="input-blank">
-                        <input type="text" id="user" name="usuario" placeholder="motivo" class="input-blank">
+                        <label for="telefono"></label>
+                        <input type="text" name="telefono" placeholder="telefono" class="input-blank">
+                        <label for="pedido"></label>
+                        <input type="text" name="pedido" placeholder="numero de pedido" class="input-blank">
                     </div>
                     <div class="blank-space">
-                        <input type="text" id="user" name="usuario" placeholder="numero de pedido">
-                        <input type="text" id="user" name="usuario" placeholder="breve descripcion">
+                        <select class="motivo" type="text" name="motivo">
+                            <option value="seleccion">seleccione un motivo</option>
+                            <option value="pedidos">pedidos</option>
+                            <option value="problemas-pagina">problema con la pagina</option>
+                            <option value="envios">envios</option>
+                            <option value="tarjetas">uso de tarjetas</option>
+                        </select>
+                        <label for="motivo"></label>
+                        <input type="text" name="descripcion" placeholder="breve descripcion">
+                        <label for="descripcion"></label>
                     </div>
                     <button>enviar</button>
                 </div>
-            </div>
+            </form>
         </section>
         <section>
             <div>
