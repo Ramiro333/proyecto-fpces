@@ -22,6 +22,9 @@
                         text-align: center;
                         font-size: 80px;
                         padding-top: 30px;
+                        span{
+                            color: red;
+                        }
                     }
                     div{
                         margin-top: 40px;
@@ -39,7 +42,9 @@
                             font-size: 30px;
                             background-color: #4b4b4b81;
                             text-align: center;
-                            
+                            .rojo{
+                                color: red;
+                            }
                         }
                     }
                 }
