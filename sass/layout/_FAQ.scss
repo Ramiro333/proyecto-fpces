@@ -23,6 +23,8 @@
                 }
                 div{
                     .container-blanco{
+                        border-top: 12px double rgba(0, 0, 0, 0);
+                        border-right: 12px double rgba(0, 0, 0, 0);;
                         border-bottom: 12px double black;
                         border-left: 12px double black;
                         display: flex;
@@ -34,13 +36,14 @@
                         align-items: center;
                         h2{
                             width: 30%;
+                            border-right: 4px solid black;
+                            padding-right: 10px;
                             br{ 
                                 display: none; 
                             }
                         }
                         p{
-                            padding-left: 10px;
-                            border-left: solid black;
+                            
                             width: 70%;
                         }
                     }
@@ -49,18 +52,17 @@
                         @extend .container-blanco;
                         border-top: none;
                         border-left: none;
+                        // pongo border invicibles porque sino me desacomoda toda la box
+                        border-bottom: 12px double rgba(0, 0, 0, 0);
+                        border-left: 12px double rgba(0, 0, 0, 0);;
                         border-bottom: 12px double white;;
                         border-right: 12px double white;;
                         background-color: #00000085;
                         color: rgb(255, 255, 255);
                         h2{
                             margin-right: 3px;
+                            border-right: 4px solid white;
                             
-                        }
-                        p{
-                            padding-left: 10px;
-                            margin-left: 15px;
-                            border-left: solid white;
                         }
                     }
                 }

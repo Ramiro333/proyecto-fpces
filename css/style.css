@@ -381,14 +381,18 @@ header {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%; }
     .card-index div .container-producto {
-      background-color: white;
       border-radius: 10px;
+      background-color: black;
       width: 25%;
       transition: transform 0.3s ease;
       z-index: 1; }
       .card-index div .container-producto a {
+        width: 100%;
+        height: 100%;
         text-decoration: none; }
         .card-index div .container-producto a div {
           background: none;
@@ -399,6 +403,11 @@ header {
             background: none; }
             .card-index div .container-producto a .texto ul li {
               background: none; }
+        .card-index div .container-producto a img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          height: 380px; }
       .card-index div .container-producto p {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -408,9 +417,6 @@ header {
         padding-top: 10px;
         text-align: center;
         color: white; }
-      .card-index div .container-producto img {
-        background-size: cover;
-        width: 100%; }
       .card-index div .container-producto:hover {
         transform: scale(1.2);
         z-index: 2; }
@@ -525,6 +531,10 @@ header {
     .card-componentes .container-individual-producto {
       width: 80%; } }
 
+@media (max-width: 1024px) {
+  .card-index div .container-producto a img {
+    height: 300px; } }
+
 .accordion-item {
   background-color: #723fff;
   border: 4px solid black; }
@@ -547,6 +557,8 @@ header {
       font-size: 80px;
       margin-bottom: 50px; }
     .FAQ main section:nth-child(1) div .container-blanco, .FAQ main section:nth-child(1) div .container-negro {
+      border-top: 12px double rgba(0, 0, 0, 0);
+      border-right: 12px double rgba(0, 0, 0, 0);
       border-bottom: 12px double black;
       border-left: 12px double black;
       display: flex;
@@ -557,26 +569,25 @@ header {
       background-color: rgba(255, 255, 255, 0.527);
       align-items: center; }
       .FAQ main section:nth-child(1) div .container-blanco h2, .FAQ main section:nth-child(1) div .container-negro h2 {
-        width: 30%; }
+        width: 30%;
+        border-right: 4px solid black;
+        padding-right: 10px; }
         .FAQ main section:nth-child(1) div .container-blanco h2 br, .FAQ main section:nth-child(1) div .container-negro h2 br {
           display: none; }
       .FAQ main section:nth-child(1) div .container-blanco p, .FAQ main section:nth-child(1) div .container-negro p {
-        padding-left: 10px;
-        border-left: solid black;
         width: 70%; }
     .FAQ main section:nth-child(1) div .container-negro {
       border-top: none;
       border-left: none;
+      border-bottom: 12px double rgba(0, 0, 0, 0);
+      border-left: 12px double rgba(0, 0, 0, 0);
       border-bottom: 12px double white;
       border-right: 12px double white;
       background-color: #00000085;
       color: white; }
       .FAQ main section:nth-child(1) div .container-negro h2 {
-        margin-right: 3px; }
-      .FAQ main section:nth-child(1) div .container-negro p {
-        padding-left: 10px;
-        margin-left: 15px;
-        border-left: solid white; }
+        margin-right: 3px;
+        border-right: 4px solid white; }
 
 @media (max-width: 789px) {
   .FAQ main section:nth-child(1) h1 {
