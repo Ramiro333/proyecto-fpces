@@ -1,3 +1,16 @@
+@media (max-width:768px){
+    .contacto{
+        main{
+            section{
+                &:nth-child(2){
+                    iframe{
+                        height: 340px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width: 425px){
     .contacto{
         main{

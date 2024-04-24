@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     p{
-
+        margin: 0px;
         font-size: 30px;
     }
     div{
@@ -14,6 +14,9 @@
         justify-content: flex-end;
 
         gap: 5px;
+        input{
+            font-size: 17px;
+        }
         button{
             background-color:map-get($colores, blanco );
             font-size: 20px;
