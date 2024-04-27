@@ -170,7 +170,7 @@ footer {
       font-size: 80px;
       padding-top: 30px; }
       .index main section:nth-child(1) div h1 span {
-        color: #ff4800; }
+        animation: arcoiris 6s infinite; }
     .index main section:nth-child(1) div div {
       margin-top: 40px;
       display: flex;
@@ -187,7 +187,7 @@ footer {
         background-color: #4b4b4b81;
         text-align: center; }
         .index main section:nth-child(1) div div p .rojo {
-          color: #ff4800; }
+          animation: arcoiris 6s infinite; }
   .index main section:nth-child(2) {
     padding: 60px;
     text-shadow: #0E0E0E 0px 0 15px;
@@ -201,6 +201,20 @@ footer {
       color: #497CFF;
       margin-left: 100px;
       margin-right: 6.25rem; }
+
+@keyframes arcoiris {
+  0% {
+    color: orange; }
+  25% {
+    color: red; }
+  50% {
+    color: #6000a0; }
+  75% {
+    color: #2727ff; }
+  90% {
+    color: skyblue; }
+  100% {
+    color: orange; } }
 
 .newsletter {
   background-color: #497CFF;
@@ -716,12 +730,16 @@ footer {
         width: 100%;
         text-align: center;
         border-right: none;
-        border-bottom: solid white; } }
+        border-bottom: solid white; }
+      .FAQ main section:nth-child(1) div .container-negro p {
+        width: 90%; } }
 
 @media (max-width: 320px) {
   .FAQ main section:nth-child(1) h1 {
     font-size: 27.2px; }
   .FAQ main section:nth-child(1) div .container-blanco p {
+    font-size: 16px; }
+  .FAQ main section:nth-child(1) div .container-negro p {
     font-size: 16px; } }
 
 .contacto {
@@ -929,7 +947,7 @@ footer {
         color: #497CFF;
         margin: auto; }
         .productos-1 main section:nth-child(1) div:nth-child(2) p .rojo {
-          color: #ff4800; }
+          animation: arcoiris 6s infinite; }
       .productos-1 main section:nth-child(1) div:nth-child(2) h2 {
         margin-top: 30px;
         margin-bottom: 30px; }

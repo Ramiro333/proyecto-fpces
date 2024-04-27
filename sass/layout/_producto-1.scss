@@ -44,7 +44,7 @@
                             color: map-get($colores,celeste );
                             margin: auto;
                             .rojo{
-                                color: map-get($colores, naranja )
+                                animation: arcoiris 6s infinite;
                             }
                         }
                         h2{
