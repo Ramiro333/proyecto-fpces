@@ -42,7 +42,10 @@
                             }
                         }
                         .container-negro{
+                            flex-direction: column;
                             h2{
+                                width: 100%;
+                                text-align: center;
                                 border-right: none;
                                 border-bottom: solid white;
                             }

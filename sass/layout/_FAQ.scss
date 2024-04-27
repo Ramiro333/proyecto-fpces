@@ -28,47 +28,10 @@
                 }
                 div{
                     .container-blanco{
-                        border-top: 12px double rgba(0, 0, 0, 0);
-                        border-right: 12px double rgba(0, 0, 0, 0);;
-                        border-bottom: 12px double black;
-                        border-left: 12px double black;
-                        display: flex;
-                        font-size: 19px;
-                        gap: 30px;
-                        padding: 20px 20px 60px 20px;
-                        justify-content: space-between;
-                        background-color: rgba(255, 255, 255, 0.527);
-                        align-items: center;
-                        h2{
-                            width: 30%;
-                            border-right: 4px solid black;
-                            padding-right: 10px;
-                            br{ 
-                                display: none; 
-                            }
-                        }
-                        p{
-                            
-                            width: 70%;
-                        }
+                        @include containers(transparent,transparent, black, black,#ffffff86, black );
                     }
                     .container-negro{
-                        // utilizo el @extend para demostrar q lo domino, para no repetir pasadas tecnicas de seleccion de elementos
-                        @extend .container-blanco;
-                        border-top: none;
-                        border-left: none;
-                        // pongo border invicibles porque sino me desacomoda toda la box
-                        border-bottom: 12px double rgba(0, 0, 0, 0);
-                        border-left: 12px double rgba(0, 0, 0, 0);;
-                        border-bottom: 12px double white;;
-                        border-right: 12px double white;;
-                        background-color: #00000085;
-                        color: rgb(255, 255, 255);
-                        h2{
-                            margin-right: 3px;
-                            border-right: 4px solid white;
-                            
-                        }
+                        @include containers(transparent, white, white, transparent,#00000085, white);
                     }
                 }
             }

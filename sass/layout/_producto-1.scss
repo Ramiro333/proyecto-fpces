@@ -32,13 +32,8 @@
                         }
                     }
                     &:nth-child(2){
-                        padding: 20px;
-                        text-shadow: #0E0E0E 0px 0 15px;
-                        color: map-get($colores,blanco );
-                        text-align: center;
-                        font-size: 40px;
                         margin-top: 60px;
-                        background-color: map-get($colores, violeta );
+                        @include titulos-secudarios(30px);
                         p{
                             width: 90%;
                             margin-top: 10px;
@@ -46,7 +41,7 @@
                             color: map-get($colores,celeste );
                             margin: auto;
                             .rojo{
-                                color: red;
+                                color: map-get($colores, naranja )
                             }
                         }
                         h2{

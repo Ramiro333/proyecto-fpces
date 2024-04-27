@@ -8,26 +8,34 @@ footer{
     padding-bottom: 15px;
     div {
         &:nth-child(1){
-            margin-left: 10px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-                img{
-                    width: 40px;
-                    height: 40px;
+            a{
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                text-decoration: none;
+            }
+            img{
+                width: 40px;
+                height: 40px;
                 }
-                p{
-                    color:map-get($colores,blanco );
-                    font-weight: bolder;
-                    font-size: 1.75rem;
-                    margin: 0px;
-                }
+            p{
+                color:map-get($colores,blanco );
+                font-weight: bolder;
+                font-size: 1.75rem;
+                margin: 0px;
+            }
         }
         a{
             margin-right: 40px;
             img{
                 width: 30px;
                 height: 30px;
+                transition-duration: 1s ;
+                transition-timing-function: ease-out;
+                &:hover{
+                    transform: rotate(360deg);
+                }
             }
         }
     }    

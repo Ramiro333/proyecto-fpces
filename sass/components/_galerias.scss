@@ -55,7 +55,6 @@
             &:hover{
                 transform: scale(1.2);
                 z-index: 2;
-                
                 .container-interno{
                     backdrop-filter:blur(3px);
                     border-radius: 10px;
@@ -66,7 +65,7 @@
                     height: 100%;
                     animation-name: difuminado;
                     animation-timing-function: ease-in;
-                    animation-duration: 0.2s;
+                    animation-duration: 0.3s;
                     .texto{
                         display: block;
                         position: absolute;
@@ -133,15 +132,6 @@
 @keyframes difuminado{
     0%{
         filter: blur(20px);
-    }
-    25%{
-        filter: blur(10px);
-    }
-    50%{
-        filter: blur(5px);
-    }
-    75%{
-        filter: blur(3px);
     }
     100%{
         filter: none;

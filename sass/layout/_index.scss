@@ -23,7 +23,7 @@
                         font-size: 80px;
                         padding-top: 30px;
                         span{
-                            color: red;
+                            color: map-get($colores, naranja )
                         }
                     }
                     div{
@@ -43,17 +43,16 @@
                             background-color: #4b4b4b81;
                             text-align: center;
                             .rojo{
-                                color: red;
+                                color: map-get($colores, naranja )
                             }
                         }
                     }
                 }
             }
             &:nth-child(2){
-                @include titulos-secudarios;
+                @include titulos-secudarios(40px);
                 p{
                     margin-top: 10px;
-                    font-size: 35px;
                     color: map-get($colores,celeste );
                     margin-left: 100px;
                     margin-right: 6.25rem;

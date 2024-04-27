@@ -30,7 +30,10 @@ header{
         }
     }
     nav{
-        @include navegacion;
+        margin-right: 20px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
         ul{
             display: flex;
             gap: 1.25rem;
@@ -44,6 +47,9 @@ header{
                 border-radius: 8px;
                 list-style:none;
                 transition: background-color 0.5s;
+                &:hover{
+                    background-color: #948aff;
+                }
                 a{
                     color: map-get($colores,negro );
                     text-decoration: none;
