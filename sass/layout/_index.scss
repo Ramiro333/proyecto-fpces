@@ -6,6 +6,9 @@
                 li{
                     &:nth-child(1){
                         background-color: map-get($colores,lila );
+                        a{
+                            color: white ;
+                        }
                     }
                 }
             }
