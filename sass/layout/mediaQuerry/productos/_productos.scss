@@ -50,16 +50,28 @@
                 &:nth-child(1){
                     div{
                         &:nth-child(1){
+                            
                             height: 450px;
                             h1{
+                                margin-top: 90px;
                                 font-size: 40px;
                             }
                         }
                         &:nth-child(2){
                             font-size: 20px;
+                            padding: 5px;
+                            h2{
+                                .arcoiris{
+                                    animation: arcoiris 6s infinite;;
+                                }
+                                margin-top: 10px;
+                            }
                             p{
+                                width: 100%;
+                                text-align: center;
+                                margin-bottom: 10px;
                                 font-size: 20px;
-                                span{
+                                .invicible{
                                     display: none;
                                 }
                             }

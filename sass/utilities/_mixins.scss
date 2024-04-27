@@ -2,11 +2,11 @@
 @mixin titulos-secudarios($tamaño){
     padding: 60px;
     text-shadow: #0E0E0E 0px 0 15px;
-    color: #b5e1ff;
+    color: #cafbff;
     text-align: center;
     font-size: $tamaño;
     background: rgb(45,0,102);
-    background: radial-gradient(circle, rgba(45,0,102,1) 0%, rgba(51,0,75,1) 100%);
+    background: radial-gradient(circle, rgb(60, 0, 139) 0%, rgb(45, 0, 66) 100%);
 }
 @mixin containers($border-top, $border-right, $border-bottom, $border-left, $fondo, $letras) {
     border-top: 12px double;
