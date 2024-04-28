@@ -116,6 +116,11 @@
                         }
                     }
                 }
+                &:nth-child(3){
+                    .segundo-titulo{
+                        font-size: 33px;
+                    }
+                }
             }
         }
     }

@@ -34,7 +34,6 @@
                         margin-top: 40px;
                         display: flex;
                         flex-direction: column;
-                        
                         p{
                             color:map-get($colores,blanco );
                             text-shadow: #0E0E0E 0px 0 5px;
@@ -54,7 +53,7 @@
                 }
             }
             &:nth-child(2){
-                @include titulos-secudarios(40px);
+                @include titulos-secudarios(32px);
                 p{
                     margin-top: 10px;
                     color: map-get($colores,blanco );

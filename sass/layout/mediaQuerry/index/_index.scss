@@ -9,10 +9,6 @@
                             font-size: 60px;
                         }
                         div{
-                            img{
-                                height: 180px;
-                                border-radius: 4px;
-                            }
                             p{
                                 font-size: 26px;
                             }
@@ -46,7 +42,7 @@
                     }
                 }
                 &:nth-child(2){
-                    font-size: 30px;
+                    font-size: 25px;
                     padding-top: 60px;
                     padding-bottom: 60px;
                     p{
@@ -70,6 +66,9 @@
                             font-size: 40px;
                         }
                         div{
+                            img{
+                                height: 300px;
+                            }
                             p{
                                 .invicible{
                                     display: none;
@@ -90,7 +89,7 @@
                     div{
                         div{
                             img{
-                                height: 220px;
+                                height: 280px;
                             }
                             p{
                                 margin-right: 10px;
@@ -103,7 +102,7 @@
                 }
                 &:nth-child(2){
                     padding: 3px;
-                    font-size: 25px;
+                    font-size: 20px;
                     p{
                         font-size: 23px;
                     }
