@@ -25,9 +25,9 @@
                 margin: 50px;
                 width: 80%;
                 height: 600px;
-                h3 {
+                h1 {
                     padding-left: 10px;
-                    font-size: 40px;
+                    font-size: 35px;
                     border-top-left-radius: 13px;
                     border-top-right-radius: 13px;
                     color: map-get($colores, blanco );
@@ -109,7 +109,7 @@
                 background-color: #1111119f;
                 padding: 20px;
                 div{
-                    h3{
+                    h2{
                         font-size: 30px;
                         color: map-get($colores, blanco );
                         margin-bottom: 10px;
@@ -121,7 +121,7 @@
                         color: map-get($colores, blanco );
                         margin-bottom: 10px;
                     }
-                    h4{
+                    h3{
                         font-size: 30px;
                         border-bottom: 2px solid map-get($colores, lila );
                         color: map-get($colores, lila );

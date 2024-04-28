@@ -72,8 +72,8 @@
                 }
             }
             &:nth-child(3){
-                h3{
-                    @include titulos-secudarios(60px);
+                .segundo-titulo{
+                    @include titulos-secudarios(45px);
                 }    
             }
         }
