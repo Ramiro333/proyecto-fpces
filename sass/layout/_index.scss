@@ -43,7 +43,7 @@
                             margin-bottom: 40px;
                             margin-right: 40px;
                             font-size: 30px;
-                            background-color: #4b4b4b81;
+                            background-color: #20202081;
                             text-align: center;
                             .rojo{
                                 animation: arcoiris 6s infinite;
@@ -56,7 +56,7 @@
                 @include titulos-secudarios(40px);
                 p{
                     margin-top: 10px;
-                    color: map-get($colores,celeste );
+                    color: map-get($colores,blanco );
                     margin-left: 100px;
                     margin-right: 6.25rem;
                 }

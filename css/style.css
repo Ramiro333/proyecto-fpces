@@ -184,7 +184,7 @@ footer {
         margin-bottom: 40px;
         margin-right: 40px;
         font-size: 30px;
-        background-color: #4b4b4b81;
+        background-color: #20202081;
         text-align: center; }
         .index main section:nth-child(1) div div p .rojo {
           animation: arcoiris 6s infinite; }
@@ -198,7 +198,7 @@ footer {
     background: radial-gradient(circle, #3c008b 0%, #2d0042 100%); }
     .index main section:nth-child(2) p {
       margin-top: 10px;
-      color: #497CFF;
+      color: white;
       margin-left: 100px;
       margin-right: 6.25rem; }
 
@@ -947,7 +947,7 @@ footer {
         width: 90%;
         margin-top: 10px;
         font-size: 30px;
-        color: #497CFF;
+        color: white;
         margin: auto; }
         .productos-1 main section:nth-child(1) div:nth-child(2) p .rojo {
           animation: arcoiris 6s infinite; }
