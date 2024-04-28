@@ -18,6 +18,9 @@
     main{
         margin-top: 120px;
         section{
+            .rojo{
+                color: map-get($colores,naranja );
+            }
             &:nth-child(1){
                 h1{
                     color: map-get($colores,blanco );

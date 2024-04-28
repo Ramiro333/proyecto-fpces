@@ -181,10 +181,10 @@ footer {
         text-shadow: #0E0E0E 0px 0 5px;
         padding: 30px;
         margin-top: 40px;
-        margin-left: 40px;
+        margin-left: 15%;
         margin-bottom: 40px;
-        margin-right: 40px;
-        font-size: 30px;
+        margin-right: 15%;
+        font-size: 25px;
         background-color: #20202081;
         text-align: center; }
         .index main section:nth-child(1) div div p .rojo {
@@ -513,6 +513,8 @@ footer {
       color: white; }
   .nosotros main {
     margin-top: 120px; }
+    .nosotros main section .rojo {
+      color: #ff4800; }
     .nosotros main section:nth-child(1) h1 {
       color: white;
       text-shadow: #000000 5px 5px 30px;
@@ -947,9 +949,9 @@ footer {
       background: #2d0066;
       background: radial-gradient(circle, #3c008b 0%, #2d0042 100%); }
       .productos-1 main section:nth-child(1) div:nth-child(2) p {
-        width: 90%;
+        width: 80%;
         margin-top: 10px;
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         margin: auto; }
         .productos-1 main section:nth-child(1) div:nth-child(2) p .rojo {

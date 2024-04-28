@@ -38,9 +38,9 @@
                         margin-top: 60px;
                         @include titulos-secudarios(30px);
                         p{
-                            width: 90%;
+                            width: 80%;
                             margin-top: 10px;
-                            font-size: 30px;
+                            font-size: 25px;
                             color: map-get($colores,blanco );
                             margin: auto;
                             .rojo{
