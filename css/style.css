@@ -156,7 +156,8 @@ footer {
       height: 25px; } }
 
 .index {
-  background-image: url(../assets/images/pagina-1.png); }
+  background-image: url(../assets/images/background-index.jpg);
+  background-size: cover; }
   .index header nav ul li:nth-child(1) {
     background-color: #723fff; }
     .index header nav ul li:nth-child(1) a {
@@ -640,7 +641,8 @@ footer {
       font-size: 18px; } }
 
 .FAQ {
-  background-image: url(../assets/images/pagina-3.png); }
+  background: #670071;
+  background: linear-gradient(142deg, #670071 0%, #67009d 52%, #002ab6 100%); }
   .FAQ header nav ul li:nth-child(4) {
     background-color: #723fff; }
     .FAQ header nav ul li:nth-child(4) a {
@@ -859,7 +861,8 @@ footer {
     box-shadow: 0px 8px 30px #000000;
     border: 2px solid black;
     color: antiquewhite;
-    background-color: #1D10B5;
+    background: #670071;
+    background: linear-gradient(320deg, #670071 0%, #67009d 52%, #002ab6 100%);
     margin-bottom: 50px;
     font-size: 40px;
     padding: 30px 100px;
