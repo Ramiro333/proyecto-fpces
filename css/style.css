@@ -156,7 +156,7 @@ footer {
       height: 25px; } }
 
 .index {
-  background-image: url(../assets/images/background-index.jpg);
+  background-image: url(../assets/images/background-index-2.png);
   background-size: cover; }
   .index header nav ul li:nth-child(1) {
     background-color: #723fff; }
@@ -983,22 +983,25 @@ footer {
         display: none; } }
 
 @media (max-width: 425px) {
-  .productos-1 main section:nth-child(1) div:nth-child(1) {
-    height: 450px; }
-    .productos-1 main section:nth-child(1) div:nth-child(1) h1 {
-      margin-top: 90px;
-      font-size: 40px; }
-  .productos-1 main section:nth-child(1) div:nth-child(2) {
-    font-size: 20px;
-    padding: 5px; }
-    .productos-1 main section:nth-child(1) div:nth-child(2) h2 {
-      margin-top: 10px; }
-      .productos-1 main section:nth-child(1) div:nth-child(2) h2 .arcoiris {
-        animation: arcoiris 6s infinite; }
-    .productos-1 main section:nth-child(1) div:nth-child(2) p {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 10px;
-      font-size: 20px; }
-      .productos-1 main section:nth-child(1) div:nth-child(2) p .invicible {
-        display: none; } }
+  .productos-1 {
+    background-size: 2000px;
+    background-repeat: repeat; }
+    .productos-1 main section:nth-child(1) div:nth-child(1) {
+      height: 450px; }
+      .productos-1 main section:nth-child(1) div:nth-child(1) h1 {
+        margin-top: 90px;
+        font-size: 40px; }
+    .productos-1 main section:nth-child(1) div:nth-child(2) {
+      font-size: 20px;
+      padding: 5px; }
+      .productos-1 main section:nth-child(1) div:nth-child(2) h2 {
+        margin-top: 10px; }
+        .productos-1 main section:nth-child(1) div:nth-child(2) h2 .arcoiris {
+          animation: arcoiris 6s infinite; }
+      .productos-1 main section:nth-child(1) div:nth-child(2) p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 20px; }
+        .productos-1 main section:nth-child(1) div:nth-child(2) p .invicible {
+          display: none; } }

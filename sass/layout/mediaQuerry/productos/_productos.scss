@@ -45,6 +45,8 @@
 }
 @media (max-width:425px){
     .productos-1{
+        background-size:2000px;
+        background-repeat: repeat;
         main{
             section{
                 &:nth-child(1){
