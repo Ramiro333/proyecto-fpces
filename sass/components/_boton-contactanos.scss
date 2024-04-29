@@ -19,9 +19,15 @@
     overflow: hidden;
     display: inline-block;
     text-align: center;
+    .rojo{
+        color: map-get($colores, celeste );
+    }
 }
 .boton-faq:hover {
     color: map-get($colores, blanco);
+    .rojo{
+        color: map-get($colores , naranja );
+    }
 }
 .boton-faq::after {
     content: "";

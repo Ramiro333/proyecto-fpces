@@ -903,9 +903,13 @@ footer {
   overflow: hidden;
   display: inline-block;
   text-align: center; }
+  .boton-faq .rojo {
+    color: #497CFF; }
 
 .boton-faq:hover {
   color: white; }
+  .boton-faq:hover .rojo {
+    color: #ff4800; }
 
 .boton-faq::after {
   content: "";
