@@ -396,22 +396,6 @@ footer {
   gap: 20px;
   margin-bottom: 60px;
   margin-top: 60px; }
-  .card-componentes .grafica {
-    grid-area: div1; }
-  .card-componentes .procesador {
-    grid-area: div2; }
-  .card-componentes .ram {
-    grid-area: div3; }
-  .card-componentes .disco {
-    grid-area: div4; }
-  .card-componentes .gabinete {
-    grid-area: div5; }
-  .card-componentes .fuente {
-    grid-area: div6; }
-  .card-componentes .cooler {
-    grid-area: div7; }
-  .card-componentes .pasta {
-    grid-area: div8; }
   .card-componentes .container-individual-producto {
     color: white;
     background-color: #0e0e0e91;
@@ -435,6 +419,22 @@ footer {
       .card-componentes .container-individual-producto div ul li {
         margin-top: 10px;
         font-size: 19px; }
+  .card-componentes div:nth-child(1) {
+    grid-area: div1; }
+  .card-componentes div:nth-child(2) {
+    grid-area: div2; }
+  .card-componentes div:nth-child(3) {
+    grid-area: div3; }
+  .card-componentes div:nth-child(4) {
+    grid-area: div4; }
+  .card-componentes div:nth-child(5) {
+    grid-area: div5; }
+  .card-componentes div:nth-child(6) {
+    grid-area: div6; }
+  .card-componentes div:nth-child(7) {
+    grid-area: div7; }
+  .card-componentes div:nth-child(8) {
+    grid-area: div8; }
   @media (max-width: 768px) {
     .card-componentes {
       margin-top: 20px;

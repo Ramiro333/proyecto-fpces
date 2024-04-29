@@ -155,30 +155,6 @@
     gap: 20px;
     margin-bottom: 60px;
     margin-top: 60px;
-    .grafica{
-        grid-area: div1;
-    }
-    .procesador{
-        grid-area: div2;
-    }
-    .ram{
-        grid-area: div3;
-    }
-    .disco{
-        grid-area: div4;
-    }
-    .gabinete{
-        grid-area: div5;
-    }
-    .fuente{
-        grid-area: div6;
-    }
-    .cooler{
-        grid-area: div7;
-    }
-    .pasta{
-        grid-area: div8;
-    }
     .container-individual-producto{
         color: map-get($colores, blanco );
         background-color: #0e0e0e91;
@@ -209,6 +185,32 @@
                     font-size: 19px;
                 }
             }
+        }
+    }
+    div{
+        &:nth-child(1) {
+            grid-area: div1;
+        }
+        &:nth-child(2){
+            grid-area: div2;
+        }
+        &:nth-child(3){
+            grid-area: div3;
+        }
+        &:nth-child(4){
+            grid-area: div4;
+        }
+        &:nth-child(5){
+            grid-area: div5;
+        }
+        &:nth-child(6){
+            grid-area: div6;
+        }
+        &:nth-child(7){
+            grid-area: div7;
+        }
+        &:nth-child(8){
+            grid-area: div8;
         }
     }
     @media (max-width:768px){
