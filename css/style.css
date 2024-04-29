@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
 * {
   margin: 0;
@@ -296,7 +295,7 @@ footer {
     height: 100%; }
     .card-index div .container-producto {
       border-radius: 10px;
-      background-color: black;
+      background-color: #242424;
       width: 25%;
       transition: transform 0.3s ease;
       z-index: 1; }
@@ -344,7 +343,7 @@ footer {
           .card-index div .container-producto:hover .container-interno .texto {
             display: block;
             position: absolute;
-            color: red;
+            color: #ff0000;
             background-color: inherit;
             width: 100%;
             text-align: center;
@@ -357,7 +356,7 @@ footer {
             height: 80%; }
             .card-index div .container-producto:hover .container-interno ul li {
               padding: 6px;
-              color: red;
+              color: #ff0000;
               font-size: 20px;
               text-shadow: #000000 2px 2px 4px; }
   @media (max-width: 768px) {
@@ -536,7 +535,7 @@ footer {
       justify-content: center; }
       .nosotros main section:nth-child(1) div p {
         align-items: center;
-        background-color: #00000081;
+        background-color: #000000b0;
         padding: 40px;
         text-align: center;
         font-size: 25px;
@@ -669,6 +668,11 @@ footer {
       color: white; }
   .FAQ main section:nth-child(1) {
     margin: 100px 5% 50px 5%; }
+    .FAQ main section:nth-child(1) .rojo {
+      color: #ff4800;
+      font-weight: bolder; }
+    .FAQ main section:nth-child(1) .azul {
+      color: #2020ff; }
     .FAQ main section:nth-child(1) h1 {
       text-shadow: #747474 5px 5px 30px;
       color: white;
@@ -870,7 +874,7 @@ footer {
     .contacto main section:nth-child(2) div ul li {
       margin-bottom: 10px; }
       .contacto main section:nth-child(2) div ul li a {
-        color: red;
+        color: #ff0000;
         text-decoration: none;
         font-size: 30px; }
         .contacto main section:nth-child(2) div ul li a:hover {
@@ -890,14 +894,10 @@ footer {
   font-size: 30px;
   text-decoration: none;
   background: #fff;
-  /* color de fondo */
   color: #4741d7;
-  /* color de fuente */
   border: 3px solid #2923d1;
-  /* tamaño y color de borde */
   padding: 20px 5%;
   border-radius: 5px;
-  /* redondear bordes */
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -905,13 +905,11 @@ footer {
   text-align: center; }
 
 .boton-faq:hover {
-  color: #fff;
-  /* color de fuente hover */ }
+  color: white; }
 
 .boton-faq::after {
   content: "";
   background: #2923d1;
-  /* color de fondo hover */
   position: absolute;
   z-index: -1;
   padding: 16px 20px;
@@ -1041,7 +1039,7 @@ footer {
     .productos-1 main section:nth-child(1) div:nth-child(1) {
       height: 450px; }
       .productos-1 main section:nth-child(1) div:nth-child(1) h1 {
-        margin-top: 90px;
+        padding-top: 60px;
         font-size: 40px; }
     .productos-1 main section:nth-child(1) div:nth-child(2) {
       font-size: 20px;

@@ -7,7 +7,7 @@
                     &:nth-child(2){
                         background-color: map-get($colores,lila );
                         a{
-                            color: white ;
+                            color: map-get($colores,blanco );
                         }
                     }
                 }

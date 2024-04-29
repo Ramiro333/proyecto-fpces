@@ -14,7 +14,7 @@
         height: 100%;
         .container-producto{
             border-radius: 10px;
-            background-color: black;
+            background-color: map-get($colores,negro );
             width: 25%;
             transition: transform 0.3s ease;
             z-index: 1;
@@ -69,7 +69,7 @@
                     .texto{
                         display: block;
                         position: absolute;
-                        color: red;
+                        color: map-get($colores, rojo );
                         background-color: inherit;
                         width: 100%;
                         text-align: center;
@@ -83,7 +83,7 @@
                         height: 80%;
                         li{
                             padding: 6px;
-                            color: red;
+                            color: map-get($colores,rojo );
                             
                             font-size: 20px;
                             text-shadow: #000000 2px 2px 4px;
