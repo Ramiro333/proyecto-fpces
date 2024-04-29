@@ -110,58 +110,6 @@ header {
   header nav ul {
     gap: 1px; } }
 
-footer {
-  background: #11001a;
-  background: linear-gradient(180deg, #370055 0%, #4f0074 52%, #3a0068 100%);
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-  footer div:nth-child(1) a {
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none; }
-  footer div:nth-child(1) img {
-    width: 40px;
-    height: 40px; }
-  footer div:nth-child(1) p {
-    color: white;
-    font-weight: bolder;
-    font-size: 1.75rem;
-    margin: 0px; }
-  footer div a {
-    margin-right: 40px; }
-    footer div a img {
-      width: 30px;
-      height: 30px;
-      transition-duration: 1s;
-      transition-timing-function: ease-out; }
-      footer div a img:hover {
-        transform: rotate(360deg); }
-  footer p {
-    color: black; }
-
-@media (max-width: 900px) {
-  footer div a {
-    margin-right: 10px; } }
-
-@media (max-width: 1125px) {
-  footer {
-    padding-top: 7px;
-    padding-bottom: 7px; } }
-
-@media (max-width: 502px) {
-  footer div:nth-child(1) p {
-    font-size: 24px; }
-  footer div a {
-    margin-right: 30px; }
-    footer div a img {
-      width: 25px;
-      height: 25px; } }
-
 .index {
   background-image: url(../assets/images/background-index-2.jpg);
   background-size: cover; }
@@ -224,61 +172,6 @@ footer {
     color: skyblue; }
   100% {
     color: #ffb62e; } }
-
-.newsletter {
-  background-color: #497CFF;
-  padding: 30px;
-  padding-left: 80px;
-  padding-right: 80px;
-  display: flex;
-  justify-content: space-between; }
-  .newsletter p {
-    margin: 0px;
-    font-size: 30px; }
-  .newsletter div {
-    display: flex;
-    justify-content: flex-end;
-    gap: 5px; }
-    .newsletter div input {
-      font-size: 17px; }
-    .newsletter div button {
-      background-color: white;
-      font-size: 20px;
-      border-radius: 10px;
-      padding: 4px; }
-
-@media (max-width: 844px) {
-  .newsletter {
-    padding: 20px; }
-    .newsletter p {
-      font-size: 24px;
-      width: 70%; }
-    .newsletter div {
-      width: 30%;
-      align-items: center; }
-      .newsletter div input {
-        height: 20px; } }
-
-@media (max-width: 644px) {
-  .newsletter {
-    flex-direction: column;
-    gap: 10px; }
-    .newsletter p {
-      width: 100%;
-      text-align: center; }
-    .newsletter div {
-      width: 100%;
-      justify-content: center; } }
-
-@media (max-width: 502px) {
-  .newsletter div button {
-    font-size: 16px; } }
-
-@media (max-width: 389px) {
-  .newsletter {
-    padding: 10px; }
-    .newsletter p {
-      font-size: 15px; } }
 
 .card-index {
   width: 80%;
@@ -1059,3 +952,114 @@ footer {
         font-size: 20px; }
         .productos-1 main section:nth-child(1) div:nth-child(2) p .invicible {
           display: none; } }
+
+.newsletter {
+  background-color: #497CFF;
+  padding: 30px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  justify-content: space-between; }
+  .newsletter p {
+    margin: 0px;
+    font-size: 30px; }
+  .newsletter div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px; }
+    .newsletter div input {
+      font-size: 17px; }
+    .newsletter div button {
+      background-color: white;
+      font-size: 20px;
+      border-radius: 10px;
+      padding: 4px; }
+
+@media (max-width: 844px) {
+  .newsletter {
+    padding: 20px; }
+    .newsletter p {
+      font-size: 24px;
+      width: 70%; }
+    .newsletter div {
+      width: 30%;
+      align-items: center; }
+      .newsletter div input {
+        height: 20px; } }
+
+@media (max-width: 644px) {
+  .newsletter {
+    flex-direction: column;
+    gap: 10px; }
+    .newsletter p {
+      width: 100%;
+      text-align: center; }
+    .newsletter div {
+      width: 100%;
+      justify-content: center; } }
+
+@media (max-width: 502px) {
+  .newsletter div button {
+    font-size: 16px; } }
+
+@media (max-width: 389px) {
+  .newsletter {
+    padding: 10px; }
+    .newsletter p {
+      font-size: 15px; } }
+
+footer {
+  background: #11001a;
+  background: linear-gradient(180deg, #370055 0%, #4f0074 52%, #3a0068 100%);
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  footer div:nth-child(1) a {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none; }
+  footer div:nth-child(1) img {
+    width: 40px;
+    height: 40px; }
+  footer div:nth-child(1) p {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.75rem;
+    margin: 0px; }
+  footer div a {
+    margin-right: 40px; }
+    footer div a img {
+      width: 30px;
+      height: 30px;
+      transition-duration: 1s;
+      transition-timing-function: ease-out; }
+      footer div a img:hover {
+        transform: rotate(360deg); }
+  footer p {
+    color: black; }
+
+@media (max-width: 900px) {
+  footer div a {
+    margin-right: 10px; } }
+
+@media (max-width: 1125px) {
+  footer {
+    padding-top: 7px;
+    padding-bottom: 7px; } }
+
+@media (max-width: 502px) {
+  footer {
+    flex-direction: column; }
+    footer p {
+      text-align: center; }
+    footer div:nth-child(1) p {
+      font-size: 24px; }
+    footer div a {
+      margin-right: 30px; }
+      footer div a img {
+        width: 25px;
+        height: 25px; } }

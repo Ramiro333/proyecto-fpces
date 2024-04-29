@@ -7,7 +7,7 @@
     <meta name="keywords" content="FPCes telefono contacto soporte problema ">
     <meta name="author" content="Ramiro Reyna">
     <meta name="copyright" content="FPCes">
-    <meta property="og:title" content="FPCes: contacto ">
+    <meta property="og:title" content="FPCes: Contacto ">
     <meta property="og:url" content="https://proyectofpces.netlify.app">
     <meta property="og:description" content="contactate con el equipo de FPCes las 24 horas del dia, todos los dias">
     <meta property="og:type" content="website">
@@ -28,10 +28,10 @@
         <nav>
             <ul >
                 <li><a href="../index.html">FPCes</a></li>
-                <li><a href="./producto-1.html">productos</a></li>
-                <li><a href="./nosotros.html">nosotros</a></li>
+                <li><a href="./producto-1.html">Productos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./FAQ.html">FAQ</a></li>
-                <li><a href="#">contacto</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav> 
     </header>
@@ -42,16 +42,16 @@
                 <div class="container-inputs-contacto">
                     <div class="top-items">
                         <label for="user"></label>
-                        <input type="text" name="usuario" placeholder="nombre">
+                        <input type="text" name="name" placeholder="nombre" id="user" />
                         <label for="email"></label>
-                        <input type="text" name="email" placeholder="email">
+                        <input type="email" name="email" placeholder="email" id="email" />
                         
                     </div>
                     <div class="bottom-items">
                         <label for="telefono"></label>
-                        <input type="text" name="telefono" placeholder="telefono">
+                        <input type="number" name="telefono" placeholder="telefono" id="telefono" />
                         <label for="pedido"></label>
-                        <input type="text" name="pedido" placeholder="numero de pedido">
+                        <input type="number" name="pedido" placeholder="numero de pedido" id="pedido" />
                     </div>
                     <div class="blank-space">
                         <select class="motivo" type="text" name="motivo">
@@ -61,9 +61,8 @@
                             <option value="envios">envios</option>
                             <option value="tarjetas">uso de tarjetas</option>
                         </select>
-                        <label for="motivo"></label>
-                        <input type="text" name="descripcion" placeholder="breve descripcion">
                         <label for="descripcion"></label>
+                        <input type="text" name="descripcion" placeholder="breve descripcion" id="descripcion" />
                     </div>
                     <button>enviar</button>
                 </div>
@@ -83,11 +82,11 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.688894905377!2d-64.18625266240208!3d-31.42269650618318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f63cf2077%3A0xca71e10e4641086b!2sPaseo%20del%20Buen%20Pastor!5e0!3m2!1ses!2sar!4v1713570702908!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="newsletter">
-            <p>suscribite a nuestro newsletter</p>
+            <p>Suscribite a nuestro newsletter</p>
             <div>
-                <input placeholder="ingrese su E-mail..." required type="email">
+                <input placeholder="ingrese su E-mail..." required type="email" id="newsletter" />
                 <button>enviar</button>
-                <label></label>
+                <label for="newsletter"></label>
             </div>
         </section>
     </main>
@@ -103,5 +102,6 @@
             <a href="https://www.twitter.com" target="_blank"><img src="../assets/images/x.png"  alt="logo de twitter"></a>
             <a href="https://www.facebook.com" target="_blank"><img src="../assets/images/facebook.png" alt="logo de facebook"></a>
             <a href="https://www.instagram.com" target="_blank"><img src="../assets/images/instagram.png" alt="logo de instagram"></a>
+        </div>
 </body>
 </html>

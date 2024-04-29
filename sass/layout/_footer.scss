@@ -51,7 +51,6 @@ footer{
             }
         }
     }
-
 }
 @media (max-width: 1125px){
     footer{
@@ -61,6 +60,10 @@ footer{
 }
 @media (max-width: 502px){
     footer{
+        flex-direction: column;
+        p{
+            text-align: center;
+        }
         div{
             &:nth-child(1){
                 p{

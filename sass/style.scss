@@ -1,10 +1,9 @@
 @import "./utilities/mixins";
 @import "./utilities/maps";
+@import "./utilities/var";
 @import "./base/globales";
 @import "./layout/_header.scss";
-@import "./layout/footer";
 @import "./layout/index";
-@import "./components/newsletter";
 @import "./components/galerias";
 @import "./layout/mediaQuerry/index/indexMQ";
 @import "./layout/nosotros";
@@ -17,3 +16,5 @@
 @import "./layout/mediaQuerry/contacto/contactoMQ";
 @import "./layout/producto-1";
 @import "./layout/mediaQuerry/productos/productosMQ";
+@import "./components/newsletter";
+@import "./layout/footer";
