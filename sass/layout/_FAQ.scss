@@ -27,6 +27,9 @@ background: linear-gradient(142deg, rgba(103,0,113,1) 0%, rgba(103,0,157,1) 52%,
                     margin-bottom: 50px;
                 }
                 div{
+                    p{
+                        letter-spacing: 2px;
+                    }
                     .container-blanco{
                         @include containers(transparent,transparent, black, black,#ffffff86, black );
                     }

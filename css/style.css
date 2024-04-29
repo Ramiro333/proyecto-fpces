@@ -164,7 +164,7 @@ footer {
       height: 25px; } }
 
 .index {
-  background-image: url(../assets/images/background-index-2.png);
+  background-image: url(../assets/images/background-index-2.jpg);
   background-size: cover; }
   .index header nav ul li:nth-child(1) {
     background-color: #723fff; }
@@ -194,7 +194,8 @@ footer {
         margin-right: 15%;
         font-size: 25px;
         background-color: #20202081;
-        text-align: center; }
+        text-align: center;
+        letter-spacing: 3px; }
         .index main section:nth-child(1) div div p .rojo {
           animation: arcoiris 6s infinite; }
   .index main section:nth-child(2) {
@@ -515,7 +516,7 @@ footer {
       font-size: 19px; } }
 
 .nosotros {
-  background-image: url(../assets/images/pagina-4.png); }
+  background-image: url(../assets/images/pagina-4.jpg); }
   .nosotros header nav ul li:nth-child(3) {
     background-color: #723fff; }
     .nosotros header nav ul li:nth-child(3) a {
@@ -673,6 +674,8 @@ footer {
       color: white;
       font-size: 80px;
       margin-bottom: 50px; }
+    .FAQ main section:nth-child(1) div p {
+      letter-spacing: 2px; }
     .FAQ main section:nth-child(1) div .container-blanco {
       border-top: 12px double;
       border-top-color: transparent;
@@ -768,7 +771,7 @@ footer {
     font-size: 16px; } }
 
 .contacto {
-  background-image: url(../assets/images/pagina-5.png); }
+  background-image: url(../assets/images/pagina-5.jpg); }
   .contacto header nav ul li:nth-child(5) {
     background-color: #723fff; }
     .contacto header nav ul li:nth-child(5) a {
@@ -965,7 +968,7 @@ footer {
       height: 250px; } }
 
 .productos-1 {
-  background-image: url(../assets/images/pagina-2.png); }
+  background-image: url(../assets/images/pagina-2.jpg); }
   .productos-1 header nav ul li:nth-child(2) {
     background-color: #723fff; }
     .productos-1 header nav ul li:nth-child(2) a {
@@ -999,7 +1002,8 @@ footer {
         margin-top: 10px;
         font-size: 25px;
         color: white;
-        margin: auto; }
+        margin: auto;
+        letter-spacing: 4px; }
         .productos-1 main section:nth-child(1) div:nth-child(2) p .rojo {
           animation: arcoiris 6s infinite; }
       .productos-1 main section:nth-child(1) div:nth-child(2) h2 {

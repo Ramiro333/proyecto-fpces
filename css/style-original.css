@@ -1,6 +1,6 @@
-/* 1-limpiar codigo */
-/* 2-optimizar clases, reciclar */
+
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+/* este es el estilo de antes de usar sass, lo dejo solo para q se vea la evolucion en el metodo */
 *{
     margin: 0;
     padding: 0;
