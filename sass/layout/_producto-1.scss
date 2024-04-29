@@ -1,5 +1,5 @@
 .productos-1{
-    background-image: url(../assets/images/pagina-2.png); 
+    background-image: url(../assets/images/pagina-2.jpg); 
     header{
         nav{
             ul{
@@ -7,7 +7,7 @@
                     &:nth-child(2){
                         background-color: map-get($colores,lila );
                         a{
-                            color: white ;
+                            color: map-get($colores,blanco );
                         }
                     }
                 }
@@ -43,6 +43,7 @@
                             font-size: 25px;
                             color: map-get($colores,blanco );
                             margin: auto;
+                            letter-spacing: 4px;
                             .rojo{
                                 animation: arcoiris 6s infinite;
                             }

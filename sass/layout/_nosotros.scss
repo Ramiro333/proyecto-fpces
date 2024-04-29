@@ -1,5 +1,5 @@
 .nosotros{
-    background-image: url(../assets/images/pagina-4.png);
+    background-image: url(../assets/images/pagina-4.jpg);
 
     header{
         nav{
@@ -8,7 +8,7 @@
                     &:nth-child(3){
                         background-color: map-get($colores,lila );
                         a{
-                            color: white ;
+                            color: map-get($colores,blanco );
                         }
                     }
                 }
@@ -34,7 +34,7 @@
                     justify-content: center;
                     p{
                         align-items: center;
-                        background-color: #00000081;
+                        background-color: #000000b0;
                         padding: 40px;
                         text-align: center;
                         font-size: 25px;

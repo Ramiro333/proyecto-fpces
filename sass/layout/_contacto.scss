@@ -1,5 +1,5 @@
 .contacto {
-    background-image: url(../assets/images/pagina-5.png);
+    background-image: url(../assets/images/pagina-5.jpg);
     header{
         nav{
             ul{
@@ -132,7 +132,7 @@
                         li{
                             margin-bottom: 10px;
                             a{
-                                color: red;
+                                color: map-get($colores,rojo );
                                 text-decoration: none;
                                 font-size: 30px;
                                 &:hover{

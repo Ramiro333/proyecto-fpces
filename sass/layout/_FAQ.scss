@@ -9,7 +9,7 @@ background: linear-gradient(142deg, rgba(103,0,113,1) 0%, rgba(103,0,157,1) 52%,
                     &:nth-child(4){
                         background-color: map-get($colores,lila );
                         a{
-                            color: white ;
+                            color: map-get($colores, blanco ) ;
                         }
                     }
                 }
@@ -20,6 +20,13 @@ background: linear-gradient(142deg, rgba(103,0,113,1) 0%, rgba(103,0,157,1) 52%,
         section{
             &:nth-child(1){
                 margin: 100px 5% 50px 5%;
+                .rojo{
+                    color: map-get($colores,naranja );
+                    font-weight: bolder;
+                }
+                .azul{
+                    color: map-get($colores, azul-light );
+                }
                 h1{ 
                     text-shadow: #747474 5px 5px 30px;
                     color: map-get($colores,blanco );
@@ -27,6 +34,9 @@ background: linear-gradient(142deg, rgba(103,0,113,1) 0%, rgba(103,0,157,1) 52%,
                     margin-bottom: 50px;
                 }
                 div{
+                    p{
+                        letter-spacing: 2px;
+                    }
                     .container-blanco{
                         @include containers(transparent,transparent, black, black,#ffffff86, black );
                     }
