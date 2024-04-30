@@ -713,6 +713,10 @@ header {
         .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items {
           margin-top: 0px;
           margin-bottom: 0px; }
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items input::-webkit-outer-spin-button,
+          .contacto main .flex-contacto .container-contacto .container-inputs-contacto .bottom-items input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0; }
         .contacto main .flex-contacto .container-contacto .container-inputs-contacto .blank-space {
           display: flex;
           flex-direction: column;
