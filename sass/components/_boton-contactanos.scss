@@ -3,17 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 // este estilo lo encontre en la web, le he hecho pequeños cambios para personalizarlo
 .boton-faq {
-    font-size: 30px;
+    font-size: 1.875rem;
     text-decoration: none;
     background: #fff;
     color: #4741d7;
-    border: 3px solid #2923d1;
-    padding: 20px 5%;
-    border-radius: 5px;
+    border: .1875rem solid #2923d1;
+    padding: 1.25rem 5%;
+    border-radius: .3125rem;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -34,7 +34,7 @@
     background: #2923d1;
     position: absolute;
     z-index: -1;
-    padding: 16px 20px;
+    padding: 1rem 1.25rem;
     display: block;
     top: 0;
     bottom: 0;
@@ -53,7 +53,7 @@
 }
 @media (max-width:500px){
     .boton-faq{
-        font-size: 20px;
-        padding: 20px 10px;
+        font-size: 1.25rem;
+        padding: 1.25rem .625rem;
     }
 }

@@ -1,41 +1,41 @@
 .newsletter{
     background-color: map-get($colores, celeste);
-    padding: 30px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 1.875rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     display: flex;
     justify-content: space-between;
     p{
-        margin: 0px;
-        font-size: 30px;
+        margin: 0rem;
+        font-size: 1.875rem;
     }
     div{
         display: flex;
         justify-content: flex-end;
-        gap: 5px;
+        gap: .3125rem;
         input{
-            font-size: 17px;
+            font-size: 1.0625rem;
         }
         button{
             background-color:map-get($colores, blanco );
-            font-size: 20px;
-            border-radius: 10px;
-            padding: 4px;
+            font-size: 1.25rem;
+            border-radius: .625rem;
+            padding: .25rem;
         }
     }
 }
 @media (max-width: 844px) {
     .newsletter{
-        padding: 20px;
+        padding: 1.25rem;
         p{
-            font-size: 24px;
+            font-size: 1.5rem;
             width: 70%;
         }
         div{
             width: 30%;
             align-items: center;
             input{
-                height: 20px;
+                height: 1.25rem;
             }
         }
     }
@@ -43,7 +43,7 @@
 @media (max-width: 644px){
     .newsletter{
         flex-direction: column;
-        gap: 10px;
+        gap: .625rem;
         p{
             width: 100%;
             text-align: center;
@@ -58,16 +58,16 @@
     .newsletter{
         div{
             button{
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
     }
 }
 @media (max-width:389px){
     .newsletter{
-        padding:10px ;
+        padding:.625rem ;
         p{
-            font-size: 15px;
+            font-size: .9375rem;
         }
     }
 }

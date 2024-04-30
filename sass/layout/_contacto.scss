@@ -18,18 +18,18 @@
         .flex-contacto {
             display: flex;
             justify-content: center;
-            margin-top: 100px;
+            margin-top: 6.25rem;
             .container-contacto {
-                border-radius: 15px;
+                border-radius: .9375rem;
                 background-color: map-get($colores, blanco );
-                margin: 50px;
+                margin: 3.125rem;
                 width: 80%;
-                height: 600px;
+                height: 37.5rem;
                 h1 {
-                    padding-left: 10px;
-                    font-size: 35px;
-                    border-top-left-radius: 13px;
-                    border-top-right-radius: 13px;
+                    padding-left: .625rem;
+                    font-size: 2.1875rem;
+                    border-top-left-radius: .8125rem;
+                    border-top-right-radius: .8125rem;
                     color: map-get($colores, blanco );
                     background-color:map-get($colores, negro );
                 }
@@ -40,8 +40,8 @@
                     align-items: center;
                     width: 100%;
                     .top-items {
-                        margin-top: 30px;
-                        margin-bottom: 30px;
+                        margin-top: 1.875rem;
+                        margin-bottom: 1.875rem;
                         display: flex;
                         width: 95%;
                         justify-content: space-between;
@@ -50,16 +50,16 @@
                         }
                         input {
                             width: 45%;
-                            padding: 10px;
-                            border: #000000 solid 1px;
-                            border-radius: 20px;
+                            padding: .625rem;
+                            border: #000000 solid .0625rem;
+                            border-radius: 1.25rem;
                             text-align: left;
                         }
                     }
                     .bottom-items {
                         @extend .top-items;
-                        margin-top: 0px;
-                        margin-bottom: 0px;
+                        margin-top: 0rem;
+                        margin-bottom: 0rem;
                         input::-webkit-outer-spin-button,
                         input::-webkit-inner-spin-button {
                         -webkit-appearance: none;
@@ -70,35 +70,35 @@
                         display: flex;
                         flex-direction: column;
                         width: 95%;
-                        height: 300px;
+                        height: 18.75rem;
                         .motivo {
                             margin-left: auto;
                             margin-right: auto;
                             width: 40%;
-                            padding: 10px;
-                            border: #000000 solid 1px;
-                            border-radius: 20px;
+                            padding: .625rem;
+                            border: #000000 solid .0625rem;
+                            border-radius: 1.25rem;
                             text-align: center;
-                            margin-top: 30px;
+                            margin-top: 1.875rem;
                         }
                         input {
                             &:nth-child(3) {
-                                padding: 10px;
-                                border: #000000 solid 1px;
-                                border-radius: 20px;
+                                padding: .625rem;
+                                border: #000000 solid .0625rem;
+                                border-radius: 1.25rem;
                                 text-align: left;
-                                margin-top: 30px;
+                                margin-top: 1.875rem;
                                 height: 60%;
                             }
                         }
                     }
                     button {
                         background-color:map-get($colores,celeste  );
-                        margin-top: 22px;
+                        margin-top: 1.375rem;
                         width: 30%;
-                        padding-top: 20px;
-                        padding-bottom: 20px;
-                        border-radius: 20px;
+                        padding-top: 1.25rem;
+                        padding-bottom: 1.25rem;
+                        border-radius: 1.25rem;
                         text-align: center;
                     }
                 }
@@ -110,36 +110,36 @@
                 margin-right: 10%;
                 margin-left: 10%;
                 justify-content: space-around;
-                margin-bottom: 40px;
+                margin-bottom: 2.5rem;
                 background-color: #1111119f;
-                padding: 20px;
+                padding: 1.25rem;
                 div{
                     h2{
-                        font-size: 30px;
+                        font-size: 1.875rem;
                         color: map-get($colores, blanco );
-                        margin-bottom: 10px;
-                        border-bottom: 2px solid map-get($colores, blanco );
+                        margin-bottom: .625rem;
+                        border-bottom: .125rem solid map-get($colores, blanco );
                     }
                     
                     p{
-                        font-size: 20px;
+                        font-size: 1.25rem;
                         color: map-get($colores, blanco );
-                        margin-bottom: 10px;
+                        margin-bottom: .625rem;
                     }
                     h3{
-                        font-size: 30px;
-                        border-bottom: 2px solid map-get($colores, lila );
+                        font-size: 1.875rem;
+                        border-bottom: .125rem solid map-get($colores, lila );
                         color: map-get($colores, lila );
-                        margin-bottom: 10px;
+                        margin-bottom: .625rem;
                     }
                     ul{
                         
                         li{
-                            margin-bottom: 10px;
+                            margin-bottom: .625rem;
                             a{
                                 color: map-get($colores,rojo );
                                 text-decoration: none;
-                                font-size: 30px;
+                                font-size: 1.875rem;
                                 &:hover{
                                     color: map-get($colores, lila );
                                     transition: color .5s ease-out;
@@ -150,7 +150,7 @@
                 }
                 iframe{
                     width: 45%;
-                    height: 400px;
+                    height: 25rem;
                 }
             }
         }

@@ -1,11 +1,11 @@
 @media (max-width:1134px){
     .nosotros{
         main{
-            margin-top: 140px;
+            margin-top: 8.75rem;
             section{
                 &:nth-child(1){
                     h1{
-                        font-size: 60px;
+                        font-size: 3.75rem;
                     }
                 }
             }
@@ -15,12 +15,12 @@
 @media (max-width: 1024px){
     .nosotros{
         main{
-            margin-top: 100px;
+            margin-top: 6.25rem;
             section{
                 &:nth-child(1){
                     div{
                         p{
-                            font-size: 22px;
+                            font-size: 1.375rem;
                         }
                     }
                 }
@@ -28,10 +28,10 @@
                     div{
                         img{
                             width: 50%;
-                            height: 260px;
+                            height: 16.25rem;
                         }
                         p{
-                            font-size: 20px;
+                            font-size: 1.25rem;
                         }
                     }
                 }
@@ -42,37 +42,37 @@
 @media (max-width: 768px){
     .nosotros{
         main{
-            margin-top: 100px;
+            margin-top: 6.25rem;
             section{
                 &:nth-child(1){
                     h1{
-                        font-size: 48px;
+                        font-size: 3rem;
                     }
                     div{
                         p{
-                            font-size: 20px;
-                            padding: 30px;
+                            font-size: 1.25rem;
+                            padding: 1.875rem;
                         }
                     }
                 }
                 &:nth-child(2){
-                    margin-top: 30px;
-                    gap: 20px;
+                    margin-top: 1.875rem;
+                    gap: 1.25rem;
                     div{
-                        margin-top: 100px;
+                        margin-top: 6.25rem;
                         flex-direction: column;
                         img{
                             width: 70%;
-                            height: 260px;
-                            margin-bottom: 20px;
+                            height: 16.25rem;
+                            margin-bottom: 1.25rem;
                         }
                         p{
                             width: 90%;
-                            font-size: 20px;
+                            font-size: 1.25rem;
                             text-align: center;
                         }
                         &:nth-child(2){
-                            margin-top: 30px;
+                            margin-top: 1.875rem;
                             flex-direction: column;
                         }
                     }
@@ -84,18 +84,18 @@
 @media (max-width: 425px){
     .nosotros{
         main{
-            margin-top: 130px;
+            margin-top: 8.125rem;
             section{
                 &:nth-child(1){
                     h1{
-                        font-size: 35px;
+                        font-size: 2.1875rem;
                     }
                     div{
-                        margin-left: 10px ;
-                        margin-right: 10px ;
+                        margin-left: .625rem ;
+                        margin-right: .625rem ;
                         p{
-                            padding: 10px;
-                            font-size: 18px;
+                            padding: .625rem;
+                            font-size: 1.125rem;
                             .invicible{
                                 display: none;
                             }
@@ -104,21 +104,21 @@
                 }
                 &:nth-child(2){
                     div{
-                        margin-left: 10px ;
-                        margin-right: 10px ;
+                        margin-left: .625rem ;
+                        margin-right: .625rem ;
                         img{
                             width: 95%;
-                            height: 230px;
+                            height: 14.375rem;
                         }
                         p{
                             width: 100%;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                         }
                     }
                 }
                 &:nth-child(3){
                     .segundo-titulo{
-                        font-size: 33px;
+                        font-size: 2.0625rem;
                     }
                 }
             }

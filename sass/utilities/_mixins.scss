@@ -1,7 +1,7 @@
 
 @mixin titulos-secudarios($tamaño){
-    padding: 60px;
-    text-shadow: #0E0E0E 0px 0 15px;
+    padding: 3.75rem;
+    text-shadow: #0E0E0E 0rem 0 .9375rem;
     color: #cafbff;
     text-align: center;
     font-size: $tamaño;
@@ -9,25 +9,25 @@
     background: radial-gradient(circle, rgb(60, 0, 139) 0%, rgb(45, 0, 66) 100%);
 }
 @mixin containers($border-top, $border-right, $border-bottom, $border-left, $fondo, $letras) {
-    border-top: 12px double;
+    border-top: .75rem double;
     border-top-color: $border-top;
-    border-right: 12px double;
+    border-right: .75rem double;
     border-right-color: $border-right;
-    border-bottom: 12px double;
+    border-bottom: .75rem double;
     border-bottom-color: $border-bottom;
-    border-left: 12px double;
+    border-left: .75rem double;
     border-left-color: $border-left;
     display: flex;
-    font-size: 19px;
-    gap: 30px;
-    padding: 20px 20px 60px 20px;
+    font-size: 1.1875rem;
+    gap: 1.875rem;
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
     justify-content: space-between;
     background-color: $fondo;
     align-items: center;
     h2{
         width: 30%;
-        padding-right: 10px;
-        border-right: 4px solid;
+        padding-right: .625rem;
+        border-right: .25rem solid;
         border-right-color: $letras;;
         color: $letras;
     }

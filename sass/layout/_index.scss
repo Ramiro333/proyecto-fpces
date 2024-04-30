@@ -18,34 +18,34 @@
     main{
         section{
             &:nth-child(1){
-                margin-top: 100px;
+                margin-top: 6.25rem;
                 div{
                     h1{
                         color: map-get($colores,blanco );
-                        text-shadow: #000000 5px 5px 15px;
+                        text-shadow: #000000 .3125rem .3125rem .9375rem;
                         text-align: center;
-                        font-size: 80px;
-                        padding-top: 30px;
+                        font-size: 5rem;
+                        padding-top: 1.875rem;
                         span{
                             animation: arcoiris 6s infinite;
                         }
                     }
                     div{
-                        margin-top: 40px;
+                        margin-top: 2.5rem;
                         display: flex;
                         flex-direction: column;
                         p{
                             color:map-get($colores,blanco );
-                            text-shadow: #0E0E0E 0px 0 5px;
-                            padding: 30px;
-                            margin-top: 40px;
+                            text-shadow: #0E0E0E 0rem 0 .3125rem;
+                            padding: 1.875rem;
+                            margin-top: 2.5rem;
                             margin-left: 15%;
-                            margin-bottom: 40px;
+                            margin-bottom: 2.5rem;
                             margin-right: 15%;
-                            font-size: 25px;
+                            font-size: 1.5625rem;
                             background-color: #20202081;
                             text-align: center;
-                            letter-spacing: 3px;
+                            letter-spacing: .1875rem;
                             .rojo{
                                 animation: arcoiris 6s infinite;
                             }
@@ -54,11 +54,11 @@
                 }
             }
             &:nth-child(2){
-                @include titulos-secudarios(32px);
+                @include titulos-secudarios(2rem);
                 p{
-                    margin-top: 10px;
+                    margin-top: .625rem;
                     color: map-get($colores,blanco );
-                    margin-left: 100px;
+                    margin-left: 6.25rem;
                     margin-right: 6.25rem;
                 }
             }

@@ -4,33 +4,33 @@ footer{
     align-items: center;
     justify-content: space-between;
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
     div {
         &:nth-child(1){
             a{
-                margin-left: 10px;
+                margin-left: .625rem;
                 display: flex;
                 align-items: center;
-                gap: 8px;
+                gap: .5rem;
                 text-decoration: none;
             }
             img{
-                width: 40px;
-                height: 40px;
+                width: 2.5rem;
+                height: 2.5rem;
                 }
             p{
                 color:map-get($colores,blanco );
                 font-weight: bolder;
                 font-size: 1.75rem;
-                margin: 0px;
+                margin: 0rem;
             }
         }
         a{
-            margin-right: 40px;
+            margin-right: 2.5rem;
             img{
-                width: 30px;
-                height: 30px;
+                width: 1.875rem;
+                height: 1.875rem;
                 transition-duration: 1s ;
                 transition-timing-function: ease-out;
                 &:hover{
@@ -43,22 +43,22 @@ footer{
         color: black;
     }
 }
-@media (max-width: 900px){
+@media (max-width: 56.25rem){
     footer{
         div{
             a{
-                margin-right: 10px;
+                margin-right: .625rem;
             }
         }
     }
 }
-@media (max-width: 1125px){
+@media (max-width: 70.3125rem){
     footer{
-        padding-top: 7px;
-        padding-bottom: 7px;
+        padding-top: .4375rem;
+        padding-bottom: .4375rem;
     }
 }
-@media (max-width: 502px){
+@media (max-width: 31.375rem){
     footer{
         flex-direction: column;
         p{
@@ -67,14 +67,14 @@ footer{
         div{
             &:nth-child(1){
                 p{
-                    font-size: 24px;
+                    font-size: 1.5rem;
                 }
             }
             a{
-                margin-right: 30px;
+                margin-right: 1.875rem;
                 img{
-                    width: 25px;
-                    height: 25px;
+                    width: 1.5625rem;
+                    height: 1.5625rem;
                 }
             }
         }

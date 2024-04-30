@@ -3,50 +3,50 @@ header{
     background: linear-gradient(180deg, rgba(17,0,26,1) 0%, rgba(79,0,116,1) 52%, rgba(58,0,104,1) 100%);
     align-items: flex-end;
     display: flex;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: .9375rem;
+    padding-top: .9375rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     align-items: center;
     z-index: 3;
-    padding-left: 10px;
+    padding-left: .625rem;
     div{
         a{
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: .5rem;
                 img{
-                    width: 40px;
-                    height: 40px;
+                    width: 2.5rem;
+                    height: 2.5rem;
                 }
                 p{
                     color:map-get($colores,blanco );
                     font-weight: bolder;
                     font-size: 1.75rem;
-                    margin-bottom: 0px;
+                    margin-bottom: 0rem;
                 }
         }
     }
     nav{
-        margin-right: 20px;
+        margin-right: 1.25rem;
         flex-grow: 1;
         display: flex;
         justify-content: flex-end;
         ul{
             display: flex;
             gap: 1.25rem;
-            margin: 0px;
-            padding: 0px;
+            margin: 0rem;
+            padding: 0rem;
             li{
                 
-                font-size: 20px;
+                font-size: 1.25rem;
                 background-color: map-get($colores,blanco );
-                padding: 15px;
-                border: 2px solid black;
-                border-radius: 8px;
+                padding: .9375rem;
+                border: .125rem solid black;
+                border-radius: .5rem;
                 list-style:none;
                 transition: background-color 1s;
                 &:hover{
@@ -66,13 +66,13 @@ header{
 }
 @media (max-width:1125px){
     header{
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
         nav{
             ul{
                 li{
-                    font-size: 18px;
-                    padding: 6px;
+                    font-size: 1.125rem;
+                    padding: .375rem;
                 }
             }
         }
@@ -80,53 +80,53 @@ header{
 }
 @media (max-width: 768px) {
     header{
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: .25rem;
+        padding-bottom: .25rem;
         nav{
             ul{
-                gap: 10px;
+                gap: .625rem;
                 li{
-                    font-size: 12px;
+                    font-size: .75rem;
                 }
             }
         }
         div{
             justify-content: center;
-            margin: 10px 0px;
+            margin: .625rem 0rem;
         }
     }
 }
 @media(max-width:501px){
     header{
         flex-direction: column;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-top: .125rem;
+        padding-bottom: .125rem;
         padding-left: 0;
         div{
             justify-content: center;
             p{
-                font-size: 18px;
+                font-size: 1.125rem;
             }
         }
         nav{
-            margin: 0px;
+            margin: 0rem;
             justify-content:  center;
             ul{
-                gap: 10px;
-                margin-bottom: 5px;
+                gap: .625rem;
+                margin-bottom: .3125rem;
                 li{
-                    font-size: 14px;
-                    padding: 3px;
+                    font-size: .875rem;
+                    padding: .1875rem;
                 }
             }
         }
     }
 }
-@media(max-width:350px){
+@media(max-width:21.875rem){
     header{
         nav{
             ul{
-                gap: 1px;
+                gap: .0625rem;
             }
         }
     }
