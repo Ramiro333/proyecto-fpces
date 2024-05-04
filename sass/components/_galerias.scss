@@ -81,10 +81,11 @@
                         justify-content: center;
                         align-items: center;
                         height: 80%;
+                        
                         li{
+                            list-style-type: none;
                             padding: .375rem;
                             color: map-get($colores,rojo );
-                            
                             font-size: 1.25rem;
                             text-shadow: #000000 .125rem .125rem .25rem;
                         }
